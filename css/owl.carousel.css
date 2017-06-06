@@ -79,11 +79,11 @@
 }
 /* cambio de boton prev y next */
 .olw-nav, .owl-prev{
-  margin: 0 990px  0 0;
+  margin: 0 0px  0 0;
 }
 
 .olw-nav, .owl-next{
-  margin: 0px 20px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 /* fin de cambios */
 .owl-carousel .owl-controls .owl-nav .owl-prev,
