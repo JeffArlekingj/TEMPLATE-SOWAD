@@ -16026,6 +16026,10 @@ fieldset[disabled] .dropdown--select .dropdown-toggle {
   margin-left: 280px;
 }
 
+.auth__nav-btn .header__span:hover {
+  color:#ccc;
+}
+
 .header svg {
   fill: #fff;
 }
