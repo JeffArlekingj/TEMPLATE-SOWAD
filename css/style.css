@@ -596,6 +596,10 @@ input[type="text"], input[type="password"], input[type="email"], textarea {
     border: 1px solid #ddd;
     padding: 10px;
 }
+
+input[type="password"]{
+    width:300px;
+}
 input[type="submit"], button[type=submit] {
     background: none repeat scroll 0 0 #1abc9c;
     border: medium none;
@@ -1010,4 +1014,39 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .xf:hover{
   color: #ccc;
   text-decoration: none
+}
+
+.card-n{
+  width:100px;
+}
+
+.card-n1{
+  width:100px;
+  margin:0px 0px 0px 53px;
+}
+
+.card-cvv{
+  margin:0px 0px 0px 108px;
+}
+
+.fecha-mes{
+  width:237px;
+  display: inline-block;
+  margin:0px 0px 0px 45px;
+}
+
+.fecha-ano{
+  width:170px;
+  display: inline-block;
+}
+.nombre_tarjeta{
+  margin:0px 0px 0px 10px;
+  width:307px;
+}
+.numero{
+  margin:0px 0px 0px 10px;
+}
+.numero1{
+  margin:0px 0px 0px 10px;
+
 }
