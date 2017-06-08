@@ -1050,3 +1050,8 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   margin:0px 0px 0px 10px;
 
 }
+
+.v{
+  border-style: solid;
+  border-width: 1px;
+}
