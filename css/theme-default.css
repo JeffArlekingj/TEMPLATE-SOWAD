@@ -26805,3 +26805,7 @@ fieldset[disabled] .subscribe__field {
 .datatable--property .datatable__cell--8 {
   color: #a6a6a6;
 }
+
+.dropdown-menu{
+  left:320px;
+}
