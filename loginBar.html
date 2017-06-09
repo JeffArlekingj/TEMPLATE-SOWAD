@@ -140,10 +140,10 @@
                                     <li><a href="index.html"><img src="img/logo_bar.png"></a></li>
                                     <li class="active menubar"><a href="index.html">Inicio</a></li>
                                     <li class="menubar"><a href="tienda.html">Tienda</a></li>
-                                    <li class="menubar"><a href="checkoutBar.html">Checkout</a></li>                        
+                                    <li class="menubar"><a href="CheckOut.html">Checkout</a></li>                        
                                     <li class="menubar"><a href="#">Contact</a></li>
                                     <li class="menubar"><a href="#">Dashboard</a></li><!-- Acceso autorizado -->
-                                    <li class="carrito"><a href="cart.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a></li>
+                                    <li class="carrito"><a href="carritoBar.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a></li>
                                 </ul>
                             </div>  
                     </div>
@@ -151,69 +151,81 @@
    
 
                         
-                            <div class="container">
-                                <div id="customer_details" class="" style="">
-                                  <div style="width:450px; height:30px"><h3 style="color:#fff; height:30px">Detalles de Facturación</h3></div>
+                            <div class="container" style="margin: 20px auto 40px auto;">
+                                 <div id="customer_details" class="" style="">
+
+                                          <div style="margin:30px 0px 50px 0px; display:inline-block; width:700px; height:30px; border: 1px solid #ccc;">
+                                                 <h3 style="text-align:center;padding: 20px; background:#1abc9c;color:#fff;">Registrate Gratis</h3>
+                                             
+                                                 <div class="" style="border: 1px solid #ccc; padding: 20px 20px 20px 20px;">
+                                                      
+                                                      <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                                                          <label class="" for="billing_first_name">Dni <abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input type="text" value="" placeholder="Ingrese Dni" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                                      </p>
+
+                                                      <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                                                          <label class="" for="billing_first_name">Nombre <abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input type="text" value="" placeholder="Ingrese Nombre" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                                      </p>
+
+                                                      <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                                                          <label class="" for="billing_first_name">Apellido Paterno<abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input type="text" value="" placeholder="Ingrese Apellido Paterno" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                                      </p>
+
+                                                      <p id="billing_last_name_field" class="form-row form-row-last validate-required">
+                                                          <label class="" for="billing_last_name">Apellido Materno<abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input type="text" value="" placeholder="Ingrese Apellido Materno" id="billing_last_name" name="billing_last_name" class="input-text ">
+                                                      </p>
+                                                      <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
+                                                          <label type="email" class="" for="billing_email">Email <abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input type="text" value="" placeholder="Ingrese Email" id="billing_email" name="billing_email" class="input-text ">
+                                                      </p>
+                                                      <p id="" class="form-row form-row-wide address-field validate-required">
+                                                          <label class="">Contraseña <abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input style="width:654px;" type="password" value="" placeholder="Contraseña" id="billing_address_1" name="billing_address_1" class="input-text ">
+                                                      </p>
+                                                      <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
+                                                          <label class="" for="billing_address_1">Repetir Contraseña <abbr title="required" class="required">*</abbr>
+                                                          </label>
+                                                          <input style="width:654px;" type="password" value="" placeholder="Contraseña" id="billing_address_1" name="billing_address_1" class="input-text ">
+
+                                                      <p><input type="submit" value="Subscríbeme"/></p>
+                                                 </div>
+                                          </div>
                                   
-                                   <div class="" style="border: 1px solid #ccc; background:#1abc9c;" style="width:450px;">
-                                   
-                                   </div>
-                                         
-                                        <div class="" style="width:450px; border: 1px solid #ccc; padding: 0px 20px 20px 20px;">
-                                            
-                                            <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                <label class="" for="billing_first_name">Dni <abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Ingrese Dni" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                            </p>
+                                          <div style="float:none;margin:30px 0px 0px 0px; display:inline-block; width:400px; height:30px; border: 1px solid #ccc;">
+                                                <h3 style="text-align:center;padding: 20px; background:#1abc9c;color:#fff;">Iniciar Sesión</h3>
+                                                <div class="" style="border: 1px solid #ccc; padding: 20px 20px 20px 20px;">
 
-                                            <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                <label class="" for="billing_first_name">Nombre <abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Ingrese Nombre" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                            </p>
+                                                  <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                                                      <label class="" for="billing_first_name">Usuario or Email <abbr title="required" class="required">*</abbr>
+                                                      </label>
+                                                      <input type="text" value="" placeholder="Ingrese Nombre" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                                  </p>
 
-                                            <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                <label class="" for="billing_first_name">Apellido Paterno<abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Ingrese Apellido Paterno" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                            </p>
+                                                  <p id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
+                                                      <label class="" for="billing_phone">Contraseña <abbr title="required" class="required">*</abbr>
+                                                      </label>
+                                                      <input type="password" value="" placeholder="Contraseña" id="billing_phone" name="billing_phone" class="input-text ">
+                                                  </p>
+                                                  
+                                                  <p><input type="submit" value="Subscríbeme"/></p>
 
-                                            <p id="billing_last_name_field" class="form-row form-row-last validate-required">
-                                                <label class="" for="billing_last_name">Apellido Materno<abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Ingrese Apellido Materno" id="billing_last_name" name="billing_last_name" class="input-text ">
-                                            </p>
-
-                                            <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
-                                                <label class="" for="billing_address_1">Dirección <abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Dirección" id="billing_address_1" name="billing_address_1" class="input-text ">
-                                            </p>
-                                            <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
-                                                <label class="" for="billing_email">Email <abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Ingrese Email" id="billing_email" name="billing_email" class="input-text ">
-                                            </p>
-
-                                            <p id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
-                                                <label class="" for="billing_phone">Teléfono <abbr title="required" class="required">*</abbr>
-                                                </label>
-                                                <input type="text" value="" placeholder="Ingrese Teléfono" id="billing_phone" name="billing_phone" class="input-text ">
-                                            </p>
-
-                                        </div>
-                                            
-                                        <div class="create-account col-md-5" style="margin-left:4%;">
-                                                
-                                            
-
-                                        </div>
-                            </div>
-                  </div>
-                                   
-                          
-                               
+                                                </div>
+                                          </div>      
+                                 </div>
+                           </div>
+                           <br/>
+                           <br/>
+                      
 
     
    
