@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Tech's Bar Innovation</title>
     
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-   
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/cambiosJeff.css">
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/cambiosJeff.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="assets/css/theme-default.css">
+    <link rel="stylesheet" href="assets/css/theme-default.css"/>
 
   </head>
   <body>
@@ -35,8 +35,8 @@
                             <ul>
                                 <li class="hidden"><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li><!-- Solo se muestra cuando se está logeado -->
                                 <li><a class="xf" href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                                <li><a class="xf" href="cart.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
-                                <li><a class="xf" href="checkout.html"><i class="fa fa-money"></i> Checkout</a></li>
+                                <li><a class="xf" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
+                                <li><a class="xf" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
                               <!--   <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
                               <li class="hidden"><a href="#"><i class="fa fa-power-off"></i> Logout</a></li> --><!--Solo se muestra cuando están logeados -->                           
                             </ul>
@@ -74,10 +74,23 @@
 
                                                   </div>
                                                 </li>
-                                                    <li class="dropdown">
-                                                          <button data-toggle="dropdown" type="button" class="dropdown-toggle  auth__nav-btn">
-                                                            <span class=""> Log in</span>
+                                                    <li class="dropdown auth__nav-item">
+                                                          <button data-toggle="dropdown" type="button" class="dropdown-toggle js-auth-nav-btn auth__nav-btn">
+                                                            <svg class="auth__icon-user">
+                                                              <use xlink:href="#icon-user"></use>
+                                                            </svg><span class="header__span"> Log in</span>
                                                           </button>
+
+                                                        <!-- hidden nombre de usuario -->
+                                                        <!-- <li class="hidden dropdown dropdown-small">
+                                                        <a data-toggle="dropdown" data-hover="" class="" href="#"><span class="nom">Oscar Angulex</span></a>
+                                                        <ul style="left:320px;" class="dropdown-menu">
+                                                            <li><a href="#">Perfil de usuario</a></li>
+                                                            <li><a href="#">Pedidos Realizados</a></li>
+                                                            <li><a href="#">Cerrar Sesión</a></li>
+                                                        </ul>
+                                                        </li> -->
+                                                        <!-- fin hidden nombre de usuario -->
                                                           <div class="dropdown__menu auth__dropdown--login">
                                                             <!-- INICIO DE SESION - DROPDOWN-->
                                                             <h5 class="auth__title">Inicio Sesión</h5>
@@ -139,99 +152,57 @@
                                     <li class="active menubar"><a href="index.html">Inicio</a></li>
                                     <li class="menubar"><a href="tienda.html">Tienda</a></li>
                                     <li class="menubar"><a href="CheckOut.html">Checkout</a></li>                        
-                                    <li class="menubar"><a href="#">Contactános</a></li>
+                                    <li class="menubar"><a href="#">Contact</a></li>
                                     <li class="menubar"><a href="#">Dashboard</a></li><!-- Acceso autorizado -->
-                                    <li class="carrito"><a href="carritoBar.html">Carrito - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a></li>
+                                    <li class="carrito"><a href="carritoBar.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a></li>
                                 </ul>
                             </div>  
                     </div>
                 </div>
-   
 
-                        
-                            <div class="container" style="margin: 20px auto 40px auto;">
-                                 <div id="customer_details" class="" style="">
+<!--    <div style="pointer-events: none; margin:0px auto; width:1200px; height:400px;"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3903.205381469259!2d-77.0663365!3d-11.9602776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfdecea3ed1f590fd!2sNorthern+Private+University!5e0!3m2!1sen!2spe!4v1497386569527" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div> -->
 
-                                          <div style="margin:30px 0px 50px 0px; display:inline-block; width:700px; border: 1px solid #ccc;">
-                                                 <h3 style="text-align:center;padding: 20px; background:#1abc9c;color:#fff;">Registrate Gratis</h3>
-                                             
-                                                 <div class="" style="border: 1px solid #ccc; padding: 20px 20px 20px 20px;">
-                                                      
-                                                      <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                          <label class="" for="billing_first_name">Dni <abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input type="text" value="" placeholder="Ingrese Dni" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                                      </p>
+                   <div id="customer_details">
+                                        <div style="width:100%;margin:30px auto;">
 
-                                                      <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                          <label class="" for="billing_first_name">Nombre <abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input type="text" value="" placeholder="Ingrese Nombre" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                                      </p>
+                                        <div style="float:left; width:40%; ">
+                                            <h3>Detalles de Facturación</h3>
+                                            <br />
+                                            <p id="" class="">
+                                                <label class="" for="">Dni <abbr title="required" class="required">*</abbr>
+                                                </label>
+                                                <input type="text" value="" placeholder="Ingrese Dni" id="" name="" class="input-text">
+                                            </p>
 
-                                                      <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                          <label class="" for="billing_first_name">Apellido Paterno<abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input type="text" value="" placeholder="Ingrese Apellido Paterno" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                                      </p>
+                                            <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                                                <label class="" for="billing_first_name">Nombre <abbr title="required" class="required">*</abbr>
+                                                </label>
+                                                <input type="text" value="" placeholder="Ingrese Nombre" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                            </p>
 
-                                                      <p id="billing_last_name_field" class="form-row form-row-last validate-required">
-                                                          <label class="" for="billing_last_name">Apellido Materno<abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input type="text" value="" placeholder="Ingrese Apellido Materno" id="billing_last_name" name="billing_last_name" class="input-text ">
-                                                      </p>
-                                                      <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
-                                                          <label type="email" class="" for="billing_email">Email <abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input type="text" value="" placeholder="Ingrese Email" id="billing_email" name="billing_email" class="input-text ">
-                                                      </p>
-                                                      <p id="" class="form-row form-row-wide address-field validate-required">
-                                                          <label class="">Contraseña <abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input style="width:100%;" type="password" value="" placeholder="Contraseña" id="billing_address_1" name="billing_address_1" class="input-text ">
-                                                      </p>
-                                                      <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
-                                                          <label class="" for="billing_address_1">Repetir Contraseña <abbr title="required" style="border-style:none;" class="delb required">*</abbr>
-                                                          </label>
-                                                          <input style="width:100%;" type="password" value="" placeholder="Repetir Contraseña" id="billing_address_1" name="billing_address_1" class="input-text ">
+                                            <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                                                <label class="" for="billing_first_name">Apellido Paterno<abbr title="required" class="required">*</abbr>
+                                                </label>
+                                                <input type="text" value="" placeholder="Ingrese Apellido Paterno" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                            </p>
+                                    </div>
+                                    <div style="float:left; width:40%;">
+                                            <h3>Nosotros Somos</h3>
+                                            <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+                                    
+                                    </div>
+                                    </div>
+                         </div>
 
-                                                      <p><input type="submit" value="Subscríbeme"/></p>
-                                                 </div>
-                                          </div>
-                                  
-                                          <div style="margin:30px 0px 0px 0px; display:inline-block; width:400px;">
-                                                <h3 style="text-align:center;padding: 20px; background:#1abc9c;color:#fff;">Iniciar Sesión</h3>
-                                                <div class="" style="border: 1px solid #ccc; padding: 20px 20px 20px 20px;">
-
-                                                  <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                                      <label class="" for="billing_first_name">Usuario or Email <abbr title="" style="border-style:none" class="delb required">*</abbr>
-                                                      </label>
-                                                      <input type="text" value="" placeholder="Usuario or Email" id="billing_first_name" name="billing_first_name" class="input-text ">
-                                                  </p>
-
-                                                  <p id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
-                                                      <label class="" for="billing_phone">Contraseña <abbr title="" style="border-style:none;" class="delb required">*</abbr>
-                                                      </label>
-                                                      <input style="width:100%;" type="password" value="" placeholder="Contraseña" id="billing_phone" name="billing_phone" class="input-text ">
-                                                  </p>
-                                                  
-                                                  <p><input type="submit" value="Subscríbeme"/></p>
-                                                  
-
-                                                </div>
-                                                <div style="color:#fff; padding:364px 0px 0px 0px;">
-                                                 * 
-                                                </div>
-                                          </div>      
-                                 </div>
-                           </div>
-                           <br/>
-                           <br/>
-                      
 
     
    
-    <div class="footer-top-area">
+    <div class="footer-top-area col-md-12">
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">

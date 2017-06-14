@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Estilos personales -->
-    <link rel="stylesheet" type="text/css" href="css/estilos-personales.css">
-    <!-- Fin estilos personales -->
+    
     <!-- Template realty space v 2.22 -->
     
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7cSource+Sans+Pro:200,400,600,700,900,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -43,26 +41,33 @@
     <!-- OneUI template -->
     <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
     <!-- EndTemplate OneUI -->
-    <!-- iconos de dashbaord-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- fa iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body class="dashboard menu-default hover-default sidebar-left" style = "background-color: #f6f6f6;">
    
-   
+    
     <!-- https://linearicons.com/free Iconos SvG-->
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 
 
     <!-- endinject -->
-
     <div class="header-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li><!-- Solo se muestra cuando se está logeado -->
-                            <li><a href="#"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li><!--Solo se muestra cuando están logeados -->  
+                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li><!-- Solo se muestra cuando se está logeado -->
+                            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li><!--Solo se muestra cuando están logeados -->  
                         </ul>
                     </div>
                 </div>
@@ -138,34 +143,33 @@
                   <div class="container">
                     <div class="row"><!-- KENDECLISE TODO EL CONTENIDO -->
 
-                      <!-- BEGIN SIDEBAR--><!-- Kendeclise menu izquierdo -->
+                      <!-- BEGIN SIDEBAR--><!-- Kendeclise menu izquierdo 'jarleking EDITADO 6/5'-->
                       <div class="sidebar sidebar--dashboard">
                         <div class="widget js-widget widget--sidebar-dashboard widget--collapsing">
-                          <div class="widget__header"><a class="widget__btn js-widget-btn widget__btn--toggle">Dashboard</a>
-                          </div>
+                          <div class="widget__header"><a class="widget__btn js-widget-btn widget__btn--toggle">Dashboard</a></div>
                           <div class="widget__content">
 
                             <nav class="nav nav--sidebar">
 
                               <ul class="nav__list">
 
-                                <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard.html" class="nav__link">
-                                <i class="fa fa-tachometer" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>Dashboard</a></li>
-                                                                
+                               <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard.html" class="nav__link">
+                               <i class="fa fa-tachometer" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px">
+                               </i>Dashboard</a></li>
+                               
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_config.html" class="nav__link">
-                                <i class="fa fa-cog" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>Configuración</a></li>
+                                <i class="fa fa-cog" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"> 
+                                </i>Configuración</a></li>
                                 
-
                                 <li class="nav__item" style="padding-top: 10px; padding-bottom: 10px;">
-                                  <hr class="nav__separator">
-                                </li>
+                                  <hr class="nav__separator"></li>
 
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_nuevo_producto.html" class="nav__link">
-                                <i class="fa fa-plus-square" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>
-                                    Nuevo Producto</a></li>
+                                <i class="fa fa-plus-square" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px">  
+                                </i>Nuevo Producto</a></li>
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_productos.html" class="nav__link">
-                                <i class="fa fa-laptop" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>
-                                    Productos</a></li>
+                                <i class="fa fa-laptop" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"> 
+                                </i>Productos</a></li>
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_categorias.html" class="nav__link">
                                 <i class="fa fa-cubes" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
                                     Categorías</a></li>                                
@@ -174,10 +178,8 @@
                                     Marcas</a></li>
 
                                 <li class="nav__item" style="padding-top: 10px; padding-bottom: 10px;">
-                                  <hr class="nav__separator">
-                                </li>
-
-                                
+                                  <hr class="nav__separator"></li>
+                  
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_empleados.html" class="nav__link">
                                 <i class="fa fa-user-circle-o" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
                                     Empleados</a></li>
@@ -186,8 +188,7 @@
                                     Clientes</a></li>
                                 
                                <li class="nav__item" style="padding-top: 10px; padding-bottom: 10px;">
-                                  <hr class="nav__separator">
-                                </li>
+                                  <hr class="nav__separator"></li>
 
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_orden.html" class="nav__link">
                                 <i class="fa fa-truck" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
@@ -205,247 +206,158 @@
                         </div>
                       </div>
                       <!-- END SIDEBAR-->
-                     
 
-
-                      
                       <!-- BEGIN LISTING-->
                       <div class="site site--dashboard"><!--KENDECLISE CONTENIDO -->
                         <div class="site__main">
-                                            <div class="widget js-widget widget--dashboard">
-                                              <div class="widget__header">
-                                                <h2 class="widget__title">Lista de Productos</h2>
+                        
+                                            
+
+                                    <div class="widget js-widget widget--dashboard">
+                                      <div class="widget__header">
+                                        <h2 class="widget__title">REPORTES TOTALES DE VENTAS</h2>
+                                      </div>
+                                      
+                                      <div class="widget__content">
+                                        <section class="info info--statistics">
+                                            <div class="info__list">
+                                              <div class="info__column">
+                                                <div class="info__item">
+                                                  <div class="info__title">Total de Transaciones</div>
+                                                  <div class="info__value">561</div>
+                                                  <div class="info__trend info__trend--positive">Up 3%<i class="fa fa-arrow-up"></i></div>
+                                                </div>
                                               </div>
-                                              <br>
-                                              <br>
-                                              
-                    
-
-
-                    
-
-
-
-
-                    <!-- fin Mensajes Flash -->                        
-                    
-
-
-                    <!-- Products -->
-                    <div class="block block-rounded">
-                        <div class="block-header">
-                    	<!-- cajas cabecera --> 
-							<div class="row">
-		                        <div class="col-sm-6 col-md-3">
-		                            <a class="block pure block-link-hover3 text-center" href="dashboard_nuevo_producto.html">
-		                                <div class="block-content block-content-full">
-		                                    <div class="h1 font-w700 text-success"><i class="fa fa-plus"></i></div>
-		                                </div>
-		                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-success font-w600">Nuevo Producto</div>
-		                            </a>
-		                        </div>
-		                        <div class="col-sm-6 col-md-3">
-		                            <a class="block pure block-link-hover3 text-center" href="javascript:void(0)">
-		                                <div class="block-content block-content-full">
-		                                    <div class="h1 font-w700 text-danger contador" data-from="0" data-to="15" data-speed="500" data-refresh-interval="1">0</div>
-		                                </div>
-		                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-danger font-w600">Sin Stock</div>
-		                            </a>
-		                        </div>
-		                        <div class="col-sm-6 col-md-3">
-		                            <a class="block pure block-link-hover3 text-center" href="javascript:void(0)">
-		                                <div class="block-content block-content-full">
-		                                    <div class="h1 font-w700 contador" data-from="0" data-to="100" data-speed="500" data-refresh-interval="1">0</div>
-		                                </div>
-		                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-muted font-w600">Top Ventas</div>
-		                            </a>
-		                        </div>
-		                        <div class="col-sm-6 col-md-3">
-		                            <a class="block pure block-link-hover3 text-center" href="javascript:void(0)">
-		                                <div class="block-content block-content-full">
-		                                    <div class="h1 font-w700 contador" data-from="0" data-to="8750" data-speed="500" data-refresh-interval="1">0</div>
-		                                </div>
-		                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-muted font-w600">Total</div>
-		                            </a>
-		                        </div>
-		                    </div>
-
-
-                        <!-- fin caja cabecera -->
-                        </div>
-
-                        
-
-	
-						<div class="block-content" >
-						<!-- Filtros -->
-						<div class="block-header bg-gray-lighter">
-                            <ul class="block-options">
-                                <li class="dropdown">
-                                    <button type="button" data-toggle="dropdown">Filtros <span class="caret"></span></button>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li>
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">90</span>Nuevos</a>
-                                        </li>
-                                        <li>
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Sin Stock</a>
-                                        </li>
-                                        <li class="dropdown-submenu dropdown-menu-right">
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">10</span>Categorías</a>
-                                            <ul class="dropdown-menu">
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Categoria #1</a></li>
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Categoria #2</a></li>
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Categoria #3</a></li>
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Categoria #4</a></li>
-                                            </ul>
-                                        </li>
-                                       	<li class="dropdown-submenu dropdown-menu-right">
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Marcas</a>
-                                            <ul class="dropdown-menu">
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Marca #1</a></li>
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Marca #2</a></li>
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Marca #3</a></li>
-                                            	<li><a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Marca #4</a></li>
-                                            </ul>
-                                        </li>                                       
-                                        <li>
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">8750</span>Todos</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <h3 class="block-title">Todos los Productos</h3>
-                        </div>
-
-
-						<!-- fin Filtros -->
-                        
-
-						<!-- TABLA DE PRODUCTOS -->
-						
-						<table class="table table-borderless table-striped table-vcenter" ><!--style=" border: 1px solid #ddd"-->
-                                <thead>
-                                    <tr>
-                                        <th class="text-center" style="width: 100px;">ID</th>
-                                        <th class="visible-lg text-center">Producto</th>
-                                        <th class="hidden-xs text-center">Agregado</th>
-                                        <th>Estado</th>
-                                        <th class="hidden-xs text-right">Valor</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="dashboard_editar_producto.html">
-                                                <strong>PID.01535</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg text-center">
-                                            <a href="dashboard_editar_producto.html">Razer Adaro pro</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">26/01/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Sin Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>S/.310,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="dashboard_editar_producto.html" data-toggle="tooltip" title="Detalles" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
+                                              <div class="info__column">
+                                                <div class="info__item">
+                                                  <div class="info__title">Total de Ventas</div>
+                                                  <div class="info__value">1,059</div>
+                                                  <div class="info__trend info__trend--negative">Down 1%<i class="fa fa-arrow-down"></i></div>
+                                                </div>
+                                              </div>
+                                              <div class="info__column">
+                                                <div class="info__item">
+                                                  <div class="info__title">Total de Productos mas Vistos</div>
+                                                  <div class="info__value">3,922</div>
+                                                </div>
+                                              </div>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="dashboard_editar_producto.html">
-                                                <strong>PID.01534</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg text-center">
-                                            <a href="dashboard_editar_producto.html">Memoria Sodimm ddr3 4GB</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">11/09/2015</td>
-                                        <td>
-                                            <span class="label label-success">Disponible</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>S/.30,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="dashboard_editar_producto.html" data-toggle="tooltip" title="Detalles" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-						</div>
 
+                                          <div style="padding:30px 30px 50px 0px;">
+                                          <label class="pull-left" style="padding-top:10px;">FILTRO POR: </label>
 
+                                                <select id="fitroTablas" name="fitroTablas" class="form-control pull-left select_opt" style="width:30%;margin-left:10px">
+                                                  <option value="">[Elije Opcion]</option>
+                                                  <option value="Categoria">Categoria</option>
+                                                  <option value="Marca">Marca</option>
+                                                </select>
+                                          </div>
+                                                  <div>
+                                                      <div class="info__about">
+                                                            <h4 class="info__about-title">Total de Ventas por Categorias: S/. 29,270,800.00</h4>
+                                                                <div class="info__table-wrap">
+                                                                  <table class="table info__table" id="Categoria">
+                                                                    <thead>
+                                                                      <tr>
+                                                                        <th>Categorias</th>
+                                                                        <th>No. de Visitas</th>
+                                                                        <th>Total de Ventas</th>
+                                                                      </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td>Categoria 1</td>
+                                                                        <td>18</td>
+                                                                        <td>290,000</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>Categoria 2</td>
+                                                                        <td>10</td>
+                                                                        <td>20,000</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>Categoria 3</td>
+                                                                        <td>50</td>
+                                                                        <td>10,000</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>Categoria 4</td>
+                                                                        <td>0</td>
+                                                                        <td>0.00</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>Categoria 5</td>
+                                                                        <td>0</td>
+                                                                        <td>0.00</td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                </div>
+                                                      </div>
 
-
-						<!-- FIN TABLA PRODUCTOS -->
-                       
-                    </div>
-                    <!-- END Products -->
-                    
-                    <!-- Paginación -->
-                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="product-pagination text-center">
-                                <nav>
-                                  <ul class="pagination">
-                                    <li>
-                                      <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                      </a>
-                                    </li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li>
-                                      <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </nav>                        
-                            </div>
+                                                      <div data-t="2" class="info__about">
+                                                          <h4 class="info__about-title">Total de Ventas por Marcas: S/. 29,270,800.00</h4>
+                                                              <div class="info__table-wrap">
+                                                                <table class="table info__table" id="Marca"> <!-- tablestripped -->
+                                                                  <thead>
+                                                                    <tr>
+                                                                      <th>Marcas</th>
+                                                                      <th>No. de Vistas</th>
+                                                                      <th>Total de Ventas</th>
+                                                                    </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                    <tr>
+                                                                      <td>Marca 1</td>
+                                                                      <td>18</td>
+                                                                      <td>21,800</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td>Marca 2</td>
+                                                                      <td>10</td>
+                                                                      <td>10,000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td>Marca 3</td>
+                                                                      <td>10</td>
+                                                                      <td>10,000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td>Marca 4</td>
+                                                                      <td>20</td>
+                                                                      <td>10,000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td>Marca 5</td>
+                                                                      <td>10</td>
+                                                                      <td>10,000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td>Marca 6</td>
+                                                                      <td>15</td>
+                                                                      <td>15,250</td>
+                                                                    </tr>
+                                                                  </tbody>
+                                                                </table>
+                                                              </div>
+                                                      </div>
+                                                  </div>
+                                          
+                                        </section>
+                                      </div>
+                                    </div>
+                                   <!--  </div> -->
                         </div>
-                    </div>
+                       </div>
 
-                    <!-- Fin Paginación -->
-
-                            </div>
-                        </div>
-                      </div>
-                      <!-- END LISTING-->                   
-            
-
-
-
-                    </div>
-                  </div>
-                </div>
+                      <!-- END LISTING-->
+                <!--   </div>
+                                </div> -->
             </div>
-
-
-
         </div>
         <!-- END CENTER SECTION-->
 
              <div class="clearfix"></div>
-
-        
-
-
 
         <!-- END seccion Template Realty Space -->
 
@@ -561,7 +473,6 @@
     <!-- jQuery sticky menu -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
-
     
     <!-- jQuery easing -->
     <script src="js/jquery.easing.1.3.min.js"></script>
@@ -602,22 +513,6 @@
     <script type="text/javascript" src="assets/js/demo.min.js"></script>
     <!-- endbuild--><!-- inject:ga  -->
     <!-- endinject -->
-
-    <!-- Script tablas -->
-    <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
-
-
-    <!-- Count to -->
-    <script src="assets/js/core/jquery.countTo.min.js"></script>
-    
-
-
-
-    <!-- Scripts personales -->
-    <script type="text/javascript" src="js/scripts-personales/dashboard_productos.js"></script>
-    
-    
-
     <!-- END SCRIPTS and INCLUDES-->
 
 
