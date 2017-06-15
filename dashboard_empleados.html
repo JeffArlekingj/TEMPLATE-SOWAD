@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eElectronics - HTML eCommerce Template</title>
+    <title>Tech's Bar Company</title>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -45,6 +45,7 @@
     <!-- EndTemplate OneUI -->
     <!-- iconos de dashbaord-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body class="dashboard menu-default hover-default sidebar-left" style = "background-color: #f6f6f6;">
        
@@ -150,7 +151,7 @@
 
                               <ul class="nav__list">
 
-                                <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard.html" class="nav__link">
+                                <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_main.html" class="nav__link">
                                 <i class="fa fa-tachometer" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>Dashboard</a></li>
                                                                
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_config.html" class="nav__link">
@@ -193,7 +194,7 @@
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_orden.html" class="nav__link">
                                 <i class="fa fa-truck" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
                                     Ordenes</a></li>
-                               <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_ordenes.html" class="nav__link">
+                               <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_finanzas.html" class="nav__link">
                                 <i class="fa fa-money" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
                                     Finanzas</a></li>
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_reportes.html" class="nav__link">
@@ -234,7 +235,7 @@
                                         <div class="worker worker--profile">
                                           <div class="worker__item">
                                             <div class="worker__photo"><a href="agent_profile.html" class="item-photo item-photo--static"><img src="img/crossword.png" height="300" width="200" alt="Jeff" class="photo">
-                                                <figure class="item-photo__hover"><span class="item-photo__more">Agrandar</span></figure></a></div>
+                                                <figure class="item-photo__hover"><span class="item-photo__more">foto</span></figure></a></div>
                                             <div class="worker__intro">
                                                 <h3 class="worker__name fn">Ape Paterno</h3>
                                                 <h4>Nombre</h4><br/>
@@ -332,34 +333,64 @@
                                             </div>
                                             <div class="block-content">
                                                 <form id="form-RegistrarEmpleado" class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" enctype="multipart/form-data">
-                                                    <div class="col-xs-8">
+                                                     <div class="col-xs-8">
+                                                                <div class="form-group">
 
-                                                        <div class="form-group">
-                                                            <label for="txtNombre-registraEmpleado">Codigo</label>
-                                                            <div>
-                                                                <input class="form-control" type="text" id="txtNombre-registrarEmpleado" name="txtNombre-registrarEmpleado" placeholder="Emp001">
+                                                                             <div class="form-group">
+                                                                                <div class="col-xs-6">
+                                                                                    <h6>N* Id: <h5><h6 style="color:#1abc9c;">Emple001</h5></h6>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <h6>Usuario: <h5><h6 style="color:#1abc9c;">Juanito1</h5></h6>
+                                                                                    
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="form-group">
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Dni</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-dni" name="perfil-dni" placeholder="Ingrese su Dni.." value="56176231">
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Nombre</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-nombre" name="perfil-nombre" placeholder="Ingrese su Nombre.." value="Daniel">
+                                                                                </div>
+                                                                            </div>
+
+                                                                             
+                                                                                <div class="form-group">
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Apellido Paterno</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-ape_pate" name="perfil-ape_pate" placeholder="Ingrese su Apellido Paterno.." value="Rodriguez">
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Apellido Materno</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-ape_mate" name="perfil-ape_mate" placeholder="Ingrese su Apellido Materno.." value="Rodriguez">
+                                                                                </div>
+                                                                          
+                                                                            </div>
+                                                                  </div>
+
+                                                                  <div class="form-group">
+                                                                             <div style="margin-top:-20px;" class="form-group">
+                                                                             <div class="col-xs-6">
+                                                                                    <label for="">Email</label>
+                                                                                    <input class="form-control input-lg" type="email" id="perfil-email" name="perfil-email" placeholder="Ingrese su Correo.." value="fuep@serap.com">
+                                                                                </div>
+                                                                                 <div class="col-xs-6">
+                                                                                    <label for="txtNombre-registrarcargo">Cargo</label>
+                                                                                            
+                                                                                            <select name="tabla-ListaCargos_length" aria-controls="tabla-ListaCargos" class="form-control">
+                                                                                            <option value="Sysadmin">Sysadmin</option>
+                                                                                            <option value="Mod">Mod</option>
+                                                                                            <option value="Gerente">Gerente</option>
+                                                                                            </select>
+                                                                                 </div>
+                                                                            </div>
+                                                                   </div>
+                                                                            
                                                             </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label for="txtNombre-registrarEmpleado">Nombre</label>
-                                                            <div>
-                                                                <input class="form-control" type="text" id="txtNombre-registrarEmpleado" name="txtNombre-registrarEmpleado" placeholder="David Rosales Rosas">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label for="txtNombre-registrarcargo">Cargo</label>
-                                                                    
-                                                                    <select name="tabla-ListaCargos_length" aria-controls="tabla-ListaCargos" class="form-control">
-                                                                    <option value="Sysadmin">Sysadmin</option>
-                                                                    <option value="Mod">Mod</option>
-                                                                    <option value="Gerente">Gerente</option>
-                                                                    </select>
-                                                                    </label>
-                                                        </div>
-                                                        
-                                                    </div>
 
                                                     <div class="col-xs-4 grid cs-style-6" style="padding-right:0">
                                                         
@@ -407,31 +438,61 @@
                                             <div class="block-content">
                                                 <form class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" >                                                                                        
                                                       <div class="col-xs-8">
+                                                                <div class="form-group">
+
+                                                                             <div class="form-group">
+                                                                                <div class="col-xs-6">
+                                                                                    <h6>N* Id: <h5><h6 style="color:#1abc9c;">Emple001</h5></h6>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <h6>Usuario: <h5><h6 style="color:#1abc9c;">Juanito1</h5></h6>
+                                                                                    
+                                                                                </div>
+                                                                            </div>
 
                                                                             <div class="form-group">
-                                                                                <label for="txtNombre-registraEmpleado">Codigo</label>
-                                                                                <div>
-                                                                                    <input class="form-control" type="text" id="txtNombre-registrarEmpleado" name="txtNombre-registrarEmpleado" placeholder="Emp004">
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Dni</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-dni" name="perfil-dni" placeholder="Ingrese su Dni.." value="56176231">
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Nombre</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-nombre" name="perfil-nombre" placeholder="Ingrese su Nombre.." value="Daniel">
                                                                                 </div>
                                                                             </div>
 
-                                                                             <div class="form-group">
-                                                                                <label for="txtNombre-registrarEmpleado">Nombre</label>
-                                                                                <div>
-                                                                                    <input class="form-control" type="text" id="txtNombre-registrarEmpleado" name="txtNombre-registrarEmpleado" placeholder="Nombre del Empleado">
+                                                                             
+                                                                                <div class="form-group">
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Apellido Paterno</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-ape_pate" name="perfil-ape_pate" placeholder="Ingrese su Apellido Paterno.." value="Rodriguez">
                                                                                 </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <label for="">Apellido Materno</label>
+                                                                                    <input class="form-control input-lg" type="text" id="perfil-ape_mate" name="perfil-ape_mate" placeholder="Ingrese su Apellido Materno.." value="Rodriguez">
+                                                                                </div>
+                                                                          
                                                                             </div>
+                                                                  </div>
 
-                                                                             <div class="form-group">
-                                                                                <label for="txtNombre-registrarcargo">Cargo</label>
-                                                                                        
-                                                                                        <select name="tabla-ListaCargos_length" aria-controls="tabla-ListaCargos" class="form-control">
-                                                                                        <option value="Sysadmin">Sysadmin</option>
-                                                                                        <option value="Mod">Mod</option>
-                                                                                        <option value="Gerente">Gerente</option>
-                                                                                        </select>
-                                                                                        </label>
+                                                                  <div class="form-group">
+                                                                             <div style="margin-top:-20px;" class="form-group">
+                                                                             <div class="col-xs-6">
+                                                                                    <label for="">Email</label>
+                                                                                    <input class="form-control input-lg" type="email" id="perfil-email" name="perfil-email" placeholder="Ingrese su Correo.." value="fuep@serap.com">
+                                                                                </div>
+                                                                                 <div class="col-xs-6">
+                                                                                    <label for="txtNombre-registrarcargo">Cargo</label>
+                                                                                            
+                                                                                            <select name="tabla-ListaCargos_length" aria-controls="tabla-ListaCargos" class="form-control">
+                                                                                            <option value="Sysadmin">Sysadmin</option>
+                                                                                            <option value="Mod">Mod</option>
+                                                                                            <option value="Gerente">Gerente</option>
+                                                                                            </select>
+                                                                                 </div>
                                                                             </div>
+                                                                   </div>
                                                                             
                                                             </div>
 
