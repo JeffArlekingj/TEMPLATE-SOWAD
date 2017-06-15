@@ -1010,13 +1010,17 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   color: #1abc9c;
 }
 
-.xf:hover{
-  color: #ccc;
+.menuColor:hover{
+  color: #3f3f3f;
   text-decoration: none
 }
 
 .card-n{
   width:100px;
+}
+
+.cuadro{
+  margin:9px;
 }
 
 .card-n1{

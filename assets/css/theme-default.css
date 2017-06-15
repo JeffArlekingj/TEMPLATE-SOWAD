@@ -8469,7 +8469,7 @@ mark {
 
 .widget--dashboard .widget__btn--action:active,
 .widget--dashboard .widget__btn--action.active {
-  border-top: 4px solid #d99221;
+
   border-bottom: none;
   color: #222;
 }
@@ -11578,7 +11578,7 @@ mark {
 .form__submit:hover,
 .form__submit:focus,
 .form__submit.active {
-  color: #333;
+  color: #1abc9c;
   text-decoration: none;
   outline: none;
 }
@@ -11661,15 +11661,15 @@ mark {
 
 .form__submit.hover,
 .form__submit:hover {
-  border-bottom: 4px solid #f3bc65;
-  color: #222;
+/*   border-bottom: 4px solid #f3bc65; */
+  color: #fff;
 }
 
 .form__submit:active,
 .form__submit.active {
-  border-top: 4px solid #d99221;
+/*   border-top: 4px solid #d99221; */
   border-bottom: none;
-  color: #222;
+  color: #fff;
 }
 
 .form__submit:disabled,
@@ -16014,6 +16014,17 @@ fieldset[disabled] .dropdown--select .dropdown-toggle {
 
 .header__span {
   margin-left: 15px;
+  color:#fff;
+}
+
+button, .header__span{
+  border:none;
+  background: none;
+  margin-top:8px;
+}
+.header__span:hover{
+  border:none;
+  background: none;
 }
 
 @media (max-width: 767px) {

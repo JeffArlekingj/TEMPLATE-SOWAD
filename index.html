@@ -40,9 +40,9 @@
                         <div class="user-menu">
                             <ul>
                                 <li class="hidden"><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li><!-- Solo se muestra cuando se está logeado -->
-                                <li><a class="xf" href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                                <li><a class="xf" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
-                                <li><a class="xf" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
+                                <li><a class="menuColor" href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                <li><a class="menuColor" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
+                                <li><a class="menuColor" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
                               <!--   <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
                               <li class="hidden"><a href="#"><i class="fa fa-power-off"></i> Logout</a></li> --><!--Solo se muestra cuando están logeados -->                           
                             </ul>
@@ -56,39 +56,38 @@
                                 <div class="auth auth--header">
 
                                              
-                                                <li class="dropdown auth__nav-item">
-                                                  <div class="dropdown__menu auth__dropdown--restore">
-                                                    <!-- BEGIN AUTH RESTORE-->
-                                                    <h5 class="auth__title">Resetear Ccontraseña</h5>
-                                                    <form action="#" class="form form--flex form--auth form--restore js-restore-form js-parsley">
-                                                      <div class="row">
-                                                        <div class="form-group">
-                                                          <label for="restore-email-dropdown" class="control-label">Ingresar tu Usuario or Correo</label>
-                                                          <input type="email" name="email" id="restore-email-dropdown" required class="form-control"/>
-                                                        </div>
-                                                      </div>
-                                                      <div class="row">
-                                                        <button type="submit" class="form__submit">Resetear Contraseña</button>
-                                                      </div>
-                                                      <div class="row">
-                                                        <div class="form__options">Regresar a
-                                                          <button type="button" class="js-user-login">Iniciar Sesión</button>or
-                                                          <button type="button" class="js-user-register">Registración</button>
-                                                        </div>
-                                                        <!-- end of block .auth__links-->
-                                                      </div>
-                                                    </form>
-                                                    <!-- end of block .auth__form-->
-                                                    <!-- END AUTH RESTORE-->
-                                                  </div>
-                                                </li>
-                                                <li class="dropdown auth__nav-item">
+                                           <!--      <li class="dropdown auth__nav-item">
+                                             <div class="dropdown__menu auth__dropdown--restore">
+                                               BEGIN AUTH RESTORE
+                                               <h5 class="auth__title">Resetear Ccontraseña</h5>
+                                               <form action="#" class="form form--flex form--auth form--restore js-restore-form js-parsley">
+                                                 <div class="row">
+                                                   <div class="form-group">
+                                                     <label for="restore-email-dropdown" class="control-label">Ingresar tu Usuario or Correo</label>
+                                                     <input type="email" name="email" id="restore-email-dropdown" required class="form-control"/>
+                                                   </div>
+                                                 </div>
+                                                 <div class="row">
+                                                   <button type="submit" class="form__submit">Resetear Contraseña</button>
+                                                 </div>
+                                                 <div class="row">
+                                                   <div class="form__options">Regresar a
+                                                     <button type="button" class="js-user-login">Iniciar Sesión</button>or
+                                                     <button type="button" class="js-user-register">Registración</button>
+                                                   </div>
+                                                   end of block .auth__links
+                                                 </div>
+                                               </form>
+                                               end of block .auth__form
+                                               END AUTH RESTORE
+                                             </div>
+                                           </li> -->
+                                                
 
-                                                <button data-toggle="dropdown" type="button" class="dropdown-toggle js-auth-nav-btn auth__nav-btn">
-                                                    <svg class="auth__icon-user">
-                                                      <use xlink:href="#icon-user"></use>
-                                                   </svg><span class="header__span"> Log in</span>
+                                                <button data-toggle="dropdown" type="" class=""> 
+                                                <span class="menuColor header__span"> Log in</span>
                                                 </button>
+
                                                 <!-- hidden nombre de usuario -->
                                                         <!-- <li class="hidden dropdown dropdown-small">
                                                         <a data-toggle="dropdown" data-hover="" class="" href="#"><span class="nom">Oscar Angulex</span></a>
@@ -408,14 +407,14 @@
                     <div class="brand-wrapper">
                         <h2 class="section-title">Marcas</h2>
                         <div class="brand-list">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/asus-laptop.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/amd.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/adata.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/antryx.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/canon.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/cooler-master.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/corsair.jpg" height="120" width="120">
-                            <img style="margin:9px;" src="img/Marcas ejemplos/evga.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/asus-laptop.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/amd.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/adata.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/antryx.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/canon.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/cooler-master.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/corsair.jpg" height="120" width="120">
+                            <img class="cuadro" src="img/Marcas ejemplos/evga.jpg" height="120" width="120">
                                                                                   
                         </div>
                     </div>

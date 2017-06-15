@@ -11573,7 +11573,7 @@ mark {
 .form__submit:hover,
 .form__submit:focus,
 .form__submit.active {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   outline: none;
 }
@@ -11656,15 +11656,15 @@ mark {
 
 .form__submit.hover,
 .form__submit:hover {
-  border-bottom: 4px solid #f3bc65;
-  color: #222;
+/*   border-bottom: 4px solid #f3bc65; */
+  color: #fff;
 }
 
 .form__submit:active,
 .form__submit.active {
-  border-top: 4px solid #d99221;
+/*   border-top: 4px solid #d99221; */
   border-bottom: none;
-  color: #222;
+  color: #fff;
 }
 
 .form__submit:disabled,
@@ -12066,7 +12066,7 @@ mark {
 
 .form--banner-sidebar:not(.form--white) .dropdown--select .dropdown-toggle {
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid transparent;
+
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -15639,7 +15639,7 @@ div.wpcf7 img.ajax-loader {
   color: #2c3e50;
   background-color: #000;
   background-image: none;
-  border: 1px solid #d6d6d6;
+ 
   border-radius: 0;
   position: relative;
   z-index: 5;
