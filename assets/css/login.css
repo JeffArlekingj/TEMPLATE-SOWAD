@@ -72,8 +72,8 @@ input[type="submit"]:hover{
 }
 .main-form{
   width:350px;
-  margin: 100px auto;
-  padding:50px;
+  margin: 30px auto;
+  padding:40px;
   border: 1px solid rgba(0,0,0,0.1);
   -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.2);
   background:#fff;
@@ -121,6 +121,22 @@ a{
 
 .imagen{
 	margin:0px auto;
-	padding: 10px;
+
 	text-align: center;
+}
+
+.headt{
+  font-size: 20px;
+  text-align: center;
+  color: #838383;
+}
+
+.minitext{
+  text-align: center;
+  color:#838383;
+}
+
+.linktext{
+  color:#9999ff;
+
 }
