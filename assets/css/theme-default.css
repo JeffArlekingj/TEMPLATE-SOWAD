@@ -3342,11 +3342,7 @@ a:disabled {
 }
 
 p {
-  color: #000;
-}
-
-.fotext{
-  color: white;
+  color: #606e7c;
 }
 
 /*------------------------------------------------------------------
@@ -4393,7 +4389,6 @@ label.in-label {
   padding-left: 24px;
   padding-top: 3px;
   font-weight: normal;
-  margin: 0px 50px 0px 0px;
 }
 
 input[type=radio].in-radio,
@@ -8469,7 +8464,7 @@ mark {
 
 .widget--dashboard .widget__btn--action:active,
 .widget--dashboard .widget__btn--action.active {
-
+  border-top: 4px solid #d99221;
   border-bottom: none;
   color: #222;
 }
@@ -11578,7 +11573,7 @@ mark {
 .form__submit:hover,
 .form__submit:focus,
 .form__submit.active {
-  color: #1abc9c;
+  color: #333;
   text-decoration: none;
   outline: none;
 }
@@ -11661,15 +11656,15 @@ mark {
 
 .form__submit.hover,
 .form__submit:hover {
-/*   border-bottom: 4px solid #f3bc65; */
-  color: #fff;
+  border-bottom: 4px solid #f3bc65;
+  color: #222;
 }
 
 .form__submit:active,
 .form__submit.active {
-/*   border-top: 4px solid #d99221; */
+  border-top: 4px solid #d99221;
   border-bottom: none;
-  color: #fff;
+  color: #222;
 }
 
 .form__submit:disabled,
@@ -12386,14 +12381,12 @@ mark {
   font-weight: normal;
   text-transform: none;
   margin-bottom: 5px;
-  width:90px;
 }
 
 .form--auth .form__options {
   color: #acacac;
   margin-left: 10px;
   margin-top: 10px;
-
 }
 
 .form--auth .form__options a,
@@ -12401,16 +12394,15 @@ mark {
   border: none;
   background: none;
   color: #2c3e50;
- /*  text-decoration: underline; */
+  text-decoration: underline;
   padding: 1px 3px;
   outline: none;
   text-align: left;
 }
 
 .form--auth .form__options--forgot {
- /*  width: 180px; */
+  width: 80px;
   line-height: 1;
-  margin:0px auto;
 }
 
 .form--auth .form__remember {
@@ -12419,8 +12411,7 @@ mark {
 
 .form--auth .form__submit {
   margin-right: 10px;
-  margin: 10px auto 0px auto;
-
+  margin-left: auto;
 }
 
 .form--restore .form__submit {
@@ -16014,17 +16005,6 @@ fieldset[disabled] .dropdown--select .dropdown-toggle {
 
 .header__span {
   margin-left: 15px;
-  color:#fff;
-}
-
-button, .header__span{
-  border:none;
-  background: none;
-  margin-top:8px;
-}
-.header__span:hover{
-  border:none;
-  background: none;
 }
 
 @media (max-width: 767px) {
@@ -16034,11 +16014,7 @@ button, .header__span{
 }
 
 .auth__nav-btn .header__span {
-  margin-left: 290px;
-}
-
-.auth__nav-btn .header__span:hover {
-  color:#ccc;
+  margin-left: 5px;
 }
 
 .header svg {
@@ -23490,21 +23466,10 @@ fieldset[disabled] .subscribe__field {
 }
 
 .auth__title {
-  width:90px;
-  margin: 10px auto;
+  margin: 9px 0 18px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
-
-}
-
-.auth__title1{
-  width:200px;
-  margin: 10px auto;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-
 }
 
 .auth--header {
@@ -23597,10 +23562,8 @@ fieldset[disabled] .subscribe__field {
   background: none;
   border: none;
   text-transform: uppercase;
-  
-  margin: 10px 0px 0px 0px;
+  padding: 0;
   font-size: 13px;
-  color: #fff;
 }
 
 .header--mob-opened .auth--header .auth__nav-btn {
@@ -26844,9 +26807,4 @@ fieldset[disabled] .subscribe__field {
 
 .datatable--property .datatable__cell--8 {
   color: #a6a6a6;
-}
-
-.pass-c{
-  text-decoration: none;
-  font-size: 10 px;
 }
