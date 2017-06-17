@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/css/theme-default.css">
     <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/topbar.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,17 +53,17 @@
                     
                     <div class="col-md-4">
                                 <div class="auth auth--header">
-                                       <button data-toggle="dropdown" type="" class="logtitle"> Log in</button>
+                                       <button data-toggle="dropdown" type="" class="hidden logtitle"> Log in</button>
 
                                                 <!-- hidden nombre de usuario -->
-                                                        <!-- <li class="hidden dropdown dropdown-small">
-                                                        <a data-toggle="dropdown" data-hover="" class="" href="#"><span class="nom">Oscar Angulex</span></a>
-                                                        <ul style="left:320px;" class="dropdown-menu">
-                                                            <li><a href="#">Perfil de usuario</a></li>
-                                                            <li><a href="#">Pedidos Realizados</a></li>
-                                                            <li><a href="#">Cerrar Sesión</a></li>
-                                                        </ul>
-                                                        </li> -->
+                                                       <li style="list-style-type: none;" class"dropdown dropdown-small">
+                                                       <a data-toggle="dropdown" data-hover="" class="nombreuser" href="#">Bienvenido, <span>Oscar Angulex</span></a>
+                                                               <ul style="left:220px;" class="quitapunto dropdown-menu">
+                                                                   <li><a href="#">Perfil de usuario</a></li>
+                                                                   <li><a href="#">Pedidos Realizados</a></li>
+                                                                   <li><a href="#">Cerrar Sesión</a></li>
+                                                               </ul>
+                                                       </li>
                                                  <!-- fin hidden nombre de usuario -->
 
                                        <div class="dropdown__menu auth__dropdown--login">

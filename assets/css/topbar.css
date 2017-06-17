@@ -1,0 +1,13 @@
+.nombreuser{
+	color:#131313 !important;
+	text-decoration: none  !important;
+	list-style-type: none !important;
+	float:right;
+	margin:9px;
+}
+
+	
+.nombreuser:hover{
+	color:#fff !important;
+	text-decoration: none  !important;
+}
