@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tech's Bar Company</title>
+    <title>eElectronics - HTML eCommerce Template</title>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Estilos personales -->
-    <link rel="stylesheet" type="text/css" href="css/estilos-personales.css">
-    <!-- Fin estilos personales -->
+    
     <!-- Template realty space v 2.22 -->
     
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7cSource+Sans+Pro:200,400,600,700,900,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -40,18 +38,39 @@
     
     <!-- EndTemplate Realty Space -->
 
+    <!-- Sweet alert 2 -->
+    <link rel="stylesheet" href="assets/js/plugins/sweetalert2/sweetalert2.min.css">
+
     <!-- OneUI template -->
     <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
     <!-- EndTemplate OneUI -->
-    <!-- iconos de dashbaord-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- tablas -->
+    <link rel="stylesheet" href="assets/js/plugins/datatables/jquery.dataTables.min.css">
+
+    <!-- Estilos personales -->
+
+    <link rel="stylesheet" type="text/css" href="css/estilos-personales.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
+    <!-- Fin estilos personales -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body class="dashboard menu-default hover-default sidebar-left" style = "background-color: #f6f6f6;">
    
    
     <!-- https://linearicons.com/free Iconos SvG-->
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+
+    <!-- endinject -->
+
+
 
     <div class="header-area">
         <div class="container">
@@ -149,9 +168,9 @@
 
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_main.html" class="nav__link">
                                 <i class="fa fa-tachometer" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>Dashboard</a></li>
-                                  <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_cupones.html" class="nav__link">
+                                <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_cupones.html" class="nav__link">
                                 <i class="fa fa-tachometer" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>Cupones</a></li>
-                                                             
+                                                                
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_config.html" class="nav__link">
                                 <i class="fa fa-cog" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width: 30px"></i>Configuración</a></li>
                                 
@@ -189,10 +208,10 @@
                                   <hr class="nav__separator">
                                 </li>
 
-                                <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_orden.html" class="nav__link">
+                                <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_ordenes.html" class="nav__link">
                                 <i class="fa fa-truck" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
                                     Ordenes</a></li>
-                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_finanzas.html" class="nav__link">
+                               <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_finanzas.html" class="nav__link">
                                 <i class="fa fa-money" aria-hidden="true" style="margin-right: 10px; padding:0 4.075px 0px 4.08px; width:30px"></i>
                                     Finanzas</a></li>
                                 <li class="nav__item" style="padding-top: 5.5px; padding-bottom: 5.5px;"><a href="dashboard_reportes.html" class="nav__link">
@@ -208,116 +227,90 @@
                      
 
 
-                      
+                    
                       <!-- BEGIN LISTING-->
                       <div class="site site--dashboard"><!--KENDECLISE CONTENIDO -->
                         <div class="site__main">
                                  <div class="widget js-widget widget--dashboard">
 
-                                              <h2 class="titulo-kendeclise">Lista de Marcas</h2>
-
-                                           
-                                              
-                    
-
-                                       
-                    
-                    
-
-
-                    <!-- Lista Marcas -->
+                                              <h2 class="titulo-kendeclise">Lista de Cupones</h2>
+                    <!-- Lista Categorías -->
                     
                          
                             <!-- Botón Añadir Nuevo Producto -->
                             <div style="width: 100%">
                                 <label style="font-size: 14px">Buscar: </label>
-                                <input type="search" name="" placeholder="Búsqueda por nombre" class="form-control-personalizado" id="busquedaNombreMarca">
-                                <button class="widget__btn js-widget-btn widget__btn--action pull-right" id="registra-marca" type="button" data-toggle="modal" data-target="#modal-registrarMarcas"  title="Registrar una nueva Marca">Nueva Marca</button>
+                                <input type="search" name="" placeholder="Búsqueda por nombre" class="form-control-personalizado" id="busquedaNombreCategoria">
+                                <button class="widget__btn js-widget-btn widget__btn--action pull-right" id="registra-categoria" type="button" data-toggle="modal" data-target="#modal-registrarCategorias"  title="Registrar una nueva Categoría">Crear Nuevo Cupon</button>
                             </div>
                             <br>
                               <!-- Dynamic Table Full -->
                                         
                       
                             <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/base_tables_datatables.js -->
-                            <table class="table table-bordered table-striped display" id="tabla-ListaMarcas">
+                            <table class="table table-bordered table-striped display" id="tabla-ListaCategorias">
                                 <thead>
-                                    <tr >
-                                        <th>Id</th>
-                                        <th>Nombre</th>
-                                        <th class="hidden-xs">Descripción</th>
+                                    <tr>
+                                        <th class="text-center">Id</th>
+                                        <th style="width: 20%;">F. Creacion</th>
+                                        <th style="width: 20%;">F. termino</th>
+                                        <th class="text-center">Quedan</th>
+                                        <th class="text-center" style="width: 40%;">Nombre</th>
+                                        
                                         <th class="text-center" style="width: 10%;">Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr data-idmar="1">
-                                        <td class="text-center">1</td>
-                                        <td class="font-w600">Acer</td>
-                                        <td class="hidden-xs">Marca fabricante de computadoras, laptops, y accesorios para laptops.</td>                                        
+                                    <tr data-idcate="1">
+                                        <td class="text-center">Cup001</td>
+                                        <td class="text-center font-w600">13/05/17</td>
+                                        <td class="text-center font-w600">13/05/17</td>
+                                        <td class="text-center font-w600">17 dias</td>   
+                                        <td class="text-center">-20% Todo Razer</td>
+                                  
                                         <td class="text-center">
                                             <div class="btn-group">                                               
-                                                <a class="btn btn-xs btn-default edita-marca" type="button" data-toggle="modal" data-target="#modal-editarMarcas" title="Editar Marca"><i class="fa fa-pencil"></i></a>                                                
-                                                <button class="btn btn-xs btn-default elimina-marca" type="button" data-toggle="tooltip" title="Eliminar Marca"><i class="fa fa-times text-danger"></i></button>
+                                                <a class="btn btn-xs btn-default edita-categoria" type="button" data-toggle="modal" data-target="#modal-editarCategorias" title="Editar Categoria"><i class="fa fa-pencil"></i></a>                                                
+                                                <button class="btn btn-xs btn-default elimina-categoria" type="button" data-toggle="tooltip" title="Eliminar Categoria"><i class="fa fa-times text-danger"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>                                    
+                                    <tr data-idcate="2">
+                                        <td class="text-center">Cup002</td>
+                                        <td class="text-center font-w600">14/05/17</td>
+                                        <td class="text-center font-w600">13/05/17</td>
+                                        <td class="text-center font-w600">17 dias</td> 
+                                        <td class="text-center">-20% Todo Adata</td>                                  
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-xs btn-default edita-categoria" type="button" data-toggle="modal" data-target="#modal-editarCategorias" title="Editar Categoria"><i class="fa fa-pencil"></i></a> 
+                                                <button class="btn btn-xs btn-default elimina-categoria" type="button" data-toggle="tooltip" title="Eliminar Categoria"><i class="fa fa-times text-danger"></i></button>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr data-idmar="2">
-                                        <td class="text-center">2</td>
-                                        <td class="font-w600">Avatec</td>
-                                        <td class="hidden-xs">Marca fabricante de Cases y fuentes de poder.</td>                                        
+                                    <tr data-idcate="3">
+                                        <td class="text-center">Cup003</td>
+                                        <td class="text-center font-w600">15/05/17</td>
+                                        <td class="text-center font-w600">13/05/17</td>
+                                        <td class="text-center font-w600">17 dias</td> 
+                                        <td class="text-center">-20% Todo Usb Kingston</td>                                     
                                         <td class="text-center">
-                                            <div class="btn-group">                                               
-                                                <a class="btn btn-xs btn-default edita-marca" type="button" data-toggle="modal" data-target="#modal-editarMarcas" title="Editar Marca"><i class="fa fa-pencil"></i></a>                                                
-                                                <button class="btn btn-xs btn-default elimina-marca" type="button" data-toggle="tooltip" title="Eliminar Marca"><i class="fa fa-times text-danger"></i></button>
+                                            <div class="btn-group">
+                                                <a class="btn btn-xs btn-default edita-categoria" type="button" data-toggle="modal" data-target="#modal-editarCategorias" title="Editar Categoria"><i class="fa fa-pencil"></i></a> 
+                                                <button class="btn btn-xs btn-default elimina-categoria" type="button" data-toggle="tooltip" title="Eliminar Categoria"><i class="fa fa-times text-danger"></i></button>
                                             </div>
                                         </td>
-                                    </tr> 
-                                    <tr data-idmar="3">
-                                        <td class="text-center">3</td>
-                                        <td class="font-w600">Razer</td>
-                                        <td class="hidden-xs">Marca fabricante de periféricos y laptop gamers.</td>                                        
-                                        <td class="text-center">
-                                            <div class="btn-group">                                               
-                                                <a class="btn btn-xs btn-default edita-marca" type="button" data-toggle="modal" data-target="#modal-editarMarcas" title="Editar Marca"><i class="fa fa-pencil"></i></a>                                                
-                                                <button class="btn btn-xs btn-default elimina-marca" type="button" data-toggle="tooltip" title="Eliminar Marca"><i class="fa fa-times text-danger"></i></button>
-                                            </div>
-                                        </td>
-                                    </tr>  
-                                    <tr data-idmar="4">
-                                        <td class="text-center">4</td>
-                                        <td class="font-w600">Canon</td>
-                                        <td class="hidden-xs">Marca fabricante de impresoras,camaras fotográficas y accesorios derivados.</td>                                      
-                                        <td class="text-center">
-                                            <div class="btn-group">                                               
-                                                <a class="btn btn-xs btn-default edita-marca" type="button" data-toggle="modal" data-target="#modal-editarMarcas" title="Editar Marca"><i class="fa fa-pencil"></i></a>                                                
-                                                <button class="btn btn-xs btn-default elimina-marca" type="button" data-toggle="tooltip" title="Eliminar Marca"><i class="fa fa-times text-danger"></i></button>
-                                            </div>
-                                        </td>
-                                    </tr>  
-
-                                    <tr data-idmar="5">
-                                        <td class="text-center">5</td>
-                                        <td class="font-w600">Corsair</td>
-                                        <td class="hidden-xs">Marca fabricante de Laptops, dispositivos para pcs y fuentes de poder.</td>
-                                        <td class="text-center">
-                                            <div class="btn-group">                                               
-                                                <a class="btn btn-xs btn-default edita-marca" type="button" data-toggle="modal" data-target="#modal-editarMarcas" title="Editar Marca"><i class="fa fa-pencil"></i></a>                                                
-                                                <button class="btn btn-xs btn-default elimina-marca" type="button" data-toggle="tooltip" title="Eliminar Marca"><i class="fa fa-times text-danger"></i></button>
-                                            </div>
-                                        </td>
-                                    </tr>   
-
-                                                                      
-                                    
+                                    </tr>
                                 </tbody>
                             </table>
                         
                     <!-- END Dynamic Table Full --> 
                        
-                    <!-- Fin Lista Marcas -->
+                    <!-- Fin Listar Categorías -->
                     
 
-                    <!-- Modal Registrar Marca-->
-                    <div class="modal fade" id="modal-registrarMarcas" tabindex="-1" role="dialog" aria-hidden="true">
+                    <!-- Modal Registrar Categoría-->
+                    <div class="modal fade" id="modal-registrarCategorias" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-fromright"  style="margin-top:200px">
                             <div class="modal-content" >
                                 
@@ -326,62 +319,41 @@
                                         <!-- Bootstrap Editar -->
                                         <div class="block block-themed" style="background-color: #f6f6f6;margin-bottom: 0">
                                             <div class="block-header bg-success" style="background-color: #1abc9c">                                    
-                                                <h3 class="block-title pull-left" style="padding-top:5px">Registrar Marca</h3><span class="close" id="cerraModalMarca" data-dismiss="modal">&times;</span>
+                                                <h3 class="block-title pull-left" style="padding-top:5px">Registrar Cupon</h3><span class="close" id="cerraModalCategoria" data-dismiss="modal">&times;</span>
                                             </div>
                                             <div class="block-content">
-                                                <form id="form-RegistrarMarca" class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" enctype="multipart/form-data">                            
-
-                                                    
-
-                                                    <div class="col-xs-8">
-
-                                                        <div class="form-group">
-                                                            <label for="txtNombre-registrarMarca">Nombre</label>
-                                                            <div>
-                                                                <input class="form-control" type="text" id="txtNombre-registrarMarca" name="txtNombre-registrarMarca" placeholder="Nombre de la marca..">
+                                                <form class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" >                                                                                        
+                                                            <div class="form-group">
+                                                                <div class="col-md-6">
+                                                                <h5>Fecha Actual</h5>
+                                                                    <input style="width:95%;" type="text" placeholder="17/06/17" disabled="disabled">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                 <h5>Fecha de Termino</h5>
+                                                                    <input style="width:95%; height:45px;" type="date" name="fecha de Termino" id="">
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                            
+                                                            <div class="form-group">
+                                                                <div style="padding-bottom:20px;" class="col-md-12">
+                                                                <h5>Id del Cupon</h5>
+                                                                    <input style="width:97%;" type="text" id="" name="" placeholder="Cup004" disabled="disabled">
+                                                                </div>
 
-                                                        <div class="form-group">
-                                                            <label  for="txtDescripcion-registrarMarca">Descripción</label>
-                                                            <div>
-                                                                <textarea class="form-control" id="txtDescripcion-registrarMarca" name="txtDescripcion-registrarMarca" rows="7" placeholder="Descripción de la marca.."></textarea>
+                                                                <div class="col-md-12">
+                                                                <h5>Nombre del Cupon</h5>
+                                                                    <input style="width:97%;" type="text" id="" name="" placeholder="Nombre del Cupon">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-xs-4" style="padding-right:0">
-                                                        
-                                                            <div class="foto-logo">
-                                                                <img id="img-registrar-marca-logotipo" alt="logotipo">
-                                                            </div>
-                                                            <label for="inputLogo-registrarMarca" class="input-texto input-texto-registrar"><i class="fa fa-upload"></i><span id="input-textoRegistrarMarca">subir logotipo</span></label><input type="file" id="inputLogo-registrarMarca" name="inputLogo-registrarMarca" class="archivo hidden">
-                                                        
-                                                    </div>
-
-                                                  
-                                                   
-                                                    
-
                                                     <div class="form-group">
-                                                       
-                                                        <div class="col-xs-6">
-                                                                <button class="btn btn-sm btn-success" type="submit" id="btnRegistrarMarca"><i class="fa fa-check push-5-r"></i> Guardar cambios</button>
-                                                        </div>
-                                                    </div>
-                                                    
-                                               
-
-                                                  
-                                                    <!-- <div class="form-group">
                                                         <div class="col-xs-12">
-                                                            <button class="btn btn-sm btn-success" type="submit" id="btnRegistrarMarca"><i class="fa fa-check push-5-r"></i> Guardar cambios</button>
+                                                            <button class="btn btn-sm btn-success" type="submit" id="btnRegistrarCategoria"><i class="fa fa-check push-5-r"></i> Guardar Registor</button>
                                                         </div>                                                       
-                                                    </div>  -->                                                  
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
-                                     <!-- END Bootstrap registrar -->
+                                     <!-- END Bootstrap Editar -->
                                     </div>
                                 </div>
 
@@ -392,90 +364,47 @@
                     
                     <!-- fin Modal -->
 
-                    <!-- Modal Editar Marca-->
-                    <div class="modal fade" id="modal-editarMarcas" tabindex="-1" role="dialog" aria-hidden="true">
+                    <!-- Modal Editar Categoría-->
+                    <div class="modal fade" id="modal-editarCategorias" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-fromright"  style="margin-top:200px">
                             <div class="modal-content" >
                                 
-                                <div class="row" id="form-editar-marca">
+                                <div class="row" id="form-editar-categoria">
                                     <div class="col-lg-12">
                                         <!-- Bootstrap Editar -->
                                         <div class="block block-themed" style="background-color: #f6f6f6;margin-bottom: 0">
                                             <div class="block-header bg-success" style="background-color: #1abc9c">                                    
-                                                <h3 class="block-title pull-left" style="padding-top:5px">Editar Marca</h3><span class="close" id="cerraModalMarca" data-dismiss="modal">&times;</span>
+                                                <h3 class="block-title pull-left" style="padding-top:5px">Editar Cupon</h3><span class="close" id="cerraModalCategoria" data-dismiss="modal">&times;</span>
                                             </div>
                                             <div class="block-content">
-                                                <form id="form-EditarMarca" class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" enctype="multipart/form-data" > 
-
-
-
-                                                    <!-- <div class="form-group">                                            
-                                                        <div class="col-xs-12">
-                                                            <input class="form-control" type="hidden" id="txtId-editarMarca" name="txtId-editarMarca">
-                                                        </div>
-                                                    </div>                                       
-                                                    <div class="form-group">
-                                                        <label class="col-xs-12" for="txtNombre-editarMarca">Nombre</label>
-                                                        <div class="col-xs-12">
-                                                            <input class="form-control" type="text" id="txtNombre-editarMarca" name="txtNombre-editarMarca" placeholder="Nombre de la marca.."">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-xs-12" for="txtDescripcion-editarMarca">Descripción</label>
-                                                        <div class="col-xs-12">
-                                                            <textarea class="form-control" id="txtDescripcion-editarMarca" name="txtDescripcion-editarMarca" rows="7" placeholder="Descripción de la marca.."></textarea>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <div class="col-xs-6">
-                                                            <label for="inputLogo-editarMarca" class="input-texto input-texto-editar"><i class="fa fa-upload"></i><span id="input-textoEditarMarca">subir logotipo</span></label><input type="file" id="inputLogo-editarMarca" name="inputLogo-editarMarca" class="archivo hidden">
-                                                        </div>
-                                                        <div class="col-xs-6">
-                                                                <button class="btn btn-sm btn-success pull-right" type="submit" id="btnEditarMarca"><i class="fa fa-check push-5-r"></i> Guardar cambios</button>
-                                                        </div>
-                                                    </div> -->
-
-                                                        <div class="col-xs-8">
-
-                                                            <input class="form-control" type="hidden" id="txtId-editarMarca" name="txtId-editarMarca">
+                                                <form class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" >                                                                                        
+                                                            <div class="form-group">
+                                                                <div class="col-md-6">
+                                                                <h5>Fecha de Creacion</h5>
+                                                                    <input style="width:95%;" type="text" placeholder="13/05/17" disabled="disabled">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                 <h5>Fecha de Termino</h5>
+                                                                    <input style="width:95%; height:45px;" type="date" name="fecha de Termino" id="">
+                                                                </div>
+                                                            </div>
                                                             
                                                             <div class="form-group">
-                                                                <label for="txtNombre-editarMarca">Nombre</label>
-                                                                <div>
-                                                                    <input class="form-control" type="text" id="txtNombre-editarMarca" name="txtNombre-editarMarca" placeholder="Nombre de la marca..">
+                                                                <div style="padding-bottom:20px;" class="col-md-12">
+                                                                <h5>Id del Cupon</h5>
+                                                                    <input style="width:97%;" type="text" id="" name="" placeholder="Cup001" disabled="disabled">
+                                                                </div>
+
+                                                                <div class="col-md-12">
+                                                                <h5>Nombre del Cupon</h5>
+                                                                    <input style="width:97%;" type="text" id="" name="" placeholder="-20% Todo Razer">
                                                                 </div>
                                                             </div>
-
-                                                            <div class="form-group">
-                                                                <label  for="txtDescripcion-editarMarca">Descripción</label>
-                                                                <div>
-                                                                    <textarea class="form-control" id="txtDescripcion-editarMarca" name="txtDescripcion-editarMarca" rows="7" placeholder="Descripción de la marca.."></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-xs-4" style="padding-right:0">
-                                                            
-                                                                <div class="foto-logo">
-                                                                    <img id="img-editar-marca-logotipo" alt="logotipo">
-                                                                </div>
-                                                                <label for="inputLogo-editarMarca" class="input-texto input-texto-editar"><i class="fa fa-upload"></i><span id="input-textoEditarMarca">subir logotipo</span></label><input type="file" id="inputLogo-editarMarca" name="inputLogo-editarMarca" class="archivo hidden">
-                                                            
-                                                        </div>
-
-                                                      
-                                                       
-                                                        
-
-                                                        <div class="form-group">
-                                                           
-                                                            <div class="col-xs-6">
-                                                                    <button class="btn btn-sm btn-success" type="submit" id="btnEditarMarca"><i class="fa fa-check push-5-r"></i> Guardar cambios</button>
-                                                            </div>
-                                                        </div>
-
-                                                  
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12">
+                                                            <button class="btn btn-sm btn-success" type="submit" id="btnRegistrarCategoria"><i class="fa fa-check push-5-r"></i> Guardar Registor</button>
+                                                        </div>                                                       
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
@@ -514,7 +443,10 @@
 
              <div class="clearfix"></div>
 
- 
+        
+
+
+
         <!-- END seccion Template Realty Space -->
 
     <div class="single-product-area">
@@ -677,20 +609,17 @@
     <!-- Script tablas -->
     <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
     
-    <!-- Datetables pluggin -->  
+    <!-- iniciando tablas -->  
     <script src="assets/js/pages/base_tables_datatables.js"></script>
 
-    
-   
 
     <!-- Scripts personales -->
-    <script type="text/javascript" src="js/scripts-personales/dashboard_marcas.js"></script>
-
-
+    <script type="text/javascript" src="js/scripts-personales/dashboard_categorias.js"></script>
     
     
 
     <!-- END SCRIPTS and INCLUDES-->
+
 
   </body>
 </html>
