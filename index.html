@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/css/theme-default.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,9 +41,9 @@
                         <div class="user-menu">
                             <ul>
                                 <li class="hidden"><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li><!-- Solo se muestra cuando se está logeado -->
-                                <li><a class="menuColor" href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                                <li><a class="menuColor" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
-                                <li><a class="menuColor" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
+                                <li><a class="menuC" href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                <li><a class="menuC" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
+                                <li><a class="menuC" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
                               <!--   <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
                               <li class="hidden"><a href="#"><i class="fa fa-power-off"></i> Logout</a></li> --><!--Solo se muestra cuando están logeados -->                           
                             </ul>
@@ -50,43 +51,8 @@
                     </div>
                     
                     <div class="col-md-4">
-                        <div class="header-right">
-                            <ul class="list-unstyled list-inline">
-                                 <!--     LOG IN REGISTER MENU BAR   -->        
                                 <div class="auth auth--header">
-
-                                             
-                                           <!--      <li class="dropdown auth__nav-item">
-                                             <div class="dropdown__menu auth__dropdown--restore">
-                                               BEGIN AUTH RESTORE
-                                               <h5 class="auth__title">Resetear Ccontraseña</h5>
-                                               <form action="#" class="form form--flex form--auth form--restore js-restore-form js-parsley">
-                                                 <div class="row">
-                                                   <div class="form-group">
-                                                     <label for="restore-email-dropdown" class="control-label">Ingresar tu Usuario or Correo</label>
-                                                     <input type="email" name="email" id="restore-email-dropdown" required class="form-control"/>
-                                                   </div>
-                                                 </div>
-                                                 <div class="row">
-                                                   <button type="submit" class="form__submit">Resetear Contraseña</button>
-                                                 </div>
-                                                 <div class="row">
-                                                   <div class="form__options">Regresar a
-                                                     <button type="button" class="js-user-login">Iniciar Sesión</button>or
-                                                     <button type="button" class="js-user-register">Registración</button>
-                                                   </div>
-                                                   end of block .auth__links
-                                                 </div>
-                                               </form>
-                                               end of block .auth__form
-                                               END AUTH RESTORE
-                                             </div>
-                                           </li> -->
-                                                
-
-                                                <button data-toggle="dropdown" type="" class=""> 
-                                                <span class="menuColor header__span"> Log in</span>
-                                                </button>
+                                       <button data-toggle="dropdown" type="" class="logtitle"> Log in</button>
 
                                                 <!-- hidden nombre de usuario -->
                                                         <!-- <li class="hidden dropdown dropdown-small">
@@ -99,47 +65,42 @@
                                                         </li> -->
                                                  <!-- fin hidden nombre de usuario -->
 
-                                                  <div class="dropdown__menu auth__dropdown--login">
+                                       <div class="dropdown__menu auth__dropdown--login">
                                                     <!-- BEGIN AUTH LOGIN-->
-                                                    <h5 class="auth__title">Inicio Sesión</h5>
+                                                    <h5 class="titulod">Inicio Sesión</h5>
+                                                    
                                                     <form action="#" class="form form--flex form--auth js-login-form js-parsley">
-                                                      <div class="row">
-                                                        <div class="form-group">
-                                                          <label for="login-username-dropdown" class="">Usuario</label>
-                                                          <input type="text" name="username" id="login-username-dropdown" required data-parsley-trigger="keyup" data-parsley-minlength="6" data-parsley-validation-threshold="5" data-parsley-minlength-message="Login should be at least 6 chars" class="form-control"/>
-                                                        </div>
-                                                        <div class="form-group">
-                                                          <label for="login-password-dropdown" class="">Contraseña</label>
-                                                          <input type="password" name="password" id="login-password-dropdown" required class="form-control"/>
-                                                        </div>
-                                                      </div>
-                                                      <div class="row">
-                                                        <div class="form__options form__options--forgot">
-                                                          <button type="button" class="js-user-restore pass-c">Olvide mi Contraseña</button>
-                                                        </div>
-                                                        <button type="submit" class="form__submit">Iniciar Sesión</button>
-                                                      </div>
-                                                      <div class="form__remember">
-                                                        <input type="checkbox" id="remember-in-dropdown" class="in-checkbox"/>
-                                                        <label for="remember-in-dropdown" class="in-label">Recordar Sesión</label>
-                                                      </div>
-                                                      <div class="row">
-                                                        <div class="form__options">Aun no eres usuario?
-                                                          <button type="button" class="js-user-register">Registrate</button>
-                                                        </div>
-                                                      </div>
+                                                            <div class="row">
+                                                                <div class="form-group">
+                                                                  <label class="">Usuario</label>
+                                                                  <input type="text" name="usuario" id="" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label  lass="">Contraseña</label>
+                                                                  <input type="password" name="password" id="" required class="form-control"/>
+                                                                  <button class="olvide" href="">Olvide mi Contraseña</button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                              <div class="form-group">
+                                                              
+                                                              <button type="submit" class="btnin">Iniciar Sesión</button>
+                                                              <div class="checkin">
+                                                                  <input type="checkbox" id="" class=""/>
+                                                                  <label class="">Recordar Sesión</label>
+                                                              </div>
+                                                            </div>
+                                                            </div>
+                                                            
                                                     </form>
                                                     <!-- end of block .auth__form-->
                                                     <!-- END AUTH LOGIN-->
-                                                  </div>
-                                                </li>
-                                              
+                                    </div>
 
-                                              <!-- end of block .auth header-->
-                                            </div>
-
-
-                    <!-- FIN DE LOG IN -->
+                                </div>
+                    </div>
+                                   <!-- FIN DE LOG IN -->
                                 <li class="hidden"><a href="#"><i class="fa fa-power-off"></i> CERRAR SESIÓN</a></li>
 
 
