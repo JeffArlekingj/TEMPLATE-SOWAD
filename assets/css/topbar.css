@@ -1,5 +1,5 @@
 .nombreuser{
-	color:#131313 !important;
+	color:#fff!important;
 	text-decoration: none  !important;
 	list-style-type: none !important;
 	float:right;
@@ -8,6 +8,28 @@
 
 	
 .nombreuser:hover{
-	color:#fff !important;
+	color:#323232!important;
 	text-decoration: none  !important;
+
 }
+
+.nombreuser:focus{
+	color:#fff;
+}
+
+.link1:hover{
+	background:#1abc9c!important;
+	color:#fff !important;
+}
+
+.menuC{
+	color:#fff!important;
+}
+
+.menuC:hover{
+
+	color:#323232!important;
+	text-decoration: none;
+
+}
+
