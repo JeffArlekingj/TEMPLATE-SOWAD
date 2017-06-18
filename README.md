@@ -1,0 +1,8 @@
+# SOWAD PRESENTACION T2
+Front End Part 
+
+Integrantes:
+---------------
++ JORGE BUSTAMANTE
++ JEFFERSON RAMIREZ
++ DIEGO ANGULO
