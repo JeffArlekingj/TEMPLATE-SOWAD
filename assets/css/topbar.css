@@ -3,13 +3,14 @@
 	text-decoration: none  !important;
 	list-style-type: none !important;
 	float:right;
-	margin:9px;
+	margin-top: 8px;
 }
 
 	
 .nombreuser:hover{
 	color:#323232!important;
 	text-decoration: none  !important;
+
 
 }
 
