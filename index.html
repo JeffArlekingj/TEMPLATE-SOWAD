@@ -30,8 +30,7 @@
     </head>
     <body>
 
-
-        <div class="mainmenu-area"> <!-- menú pegajoso -->
+ <div class="mainmenu-area"> <!-- menú pegajoso -->
 
                 <!-- Menu login -->
                 <div class="header-area">
@@ -59,7 +58,7 @@
                                             <li class="dropdown dropdown-small " sec:authorize="isAuthenticated()">
                                                 <a data-toggle="dropdown" data-hover="" class="nombreuser" href="#" style="margin:0"><span>Bienvenido, Diego Angulex </span><span th:text="${#authentication.name}"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                                 <ul style="left:250px; top:32px" class="dropdown-menu">
-                                                    <li><a href="#" class="link1">Perfil de usuario</a></li>
+                                                    <li><a href="config_cliente.html" class="link1">Configuracion</a></li>
                                                     <li><a href="#" class="link1">Pedidos Realizados</a></li>
                                                     <form id="form-cerrar-sesion" th:action="@{/logout}" method="POST">                                                        
                                                     </form>
@@ -111,10 +110,7 @@
 
                                             <!-- end of block .auth header-->
                                         </div>
-
-
-
-                                      
+                                        <!-- FIN DE LOG IN -->
 
                                     </ul>
                                 </div>
@@ -138,16 +134,16 @@
                             </button>
                         </div> 
                         <ul class="nav navbar-nav">
-                            <li><a href="#" th:href="@{/index}"><img src="img/logo_bar.png"/></a></li>
+                            <li><a href="index.html"><img src="img/logo_bar.png"/></a></li>
                         </ul>
                         <ul class="nav navbar-nav">
 
-                            <li class="active menubar"><a href="#" th:href="@{/index}" >Inicio</a></li>
-                            <li class="menubar"><a href="#" th:href="@{/tienda}">Tienda</a></li>
+                            <li class="active menubar"><a href="index.html" >Inicio</a></li>
+                            <li class="menubar"><a href="tienda.html">Tienda</a></li>
                             <li class="menubar"><a href="CheckOut.html">Checkout</a></li>                        
                             <!--<li class="menubar"><a href="#">Contactános</a></li>-->
                             <li class="menubar"><a href="#" th:href="@{/index/}">Test</a></li>
-                            <li class="menubar" sec:authorize="hasAnyRole('ROLE_SYSADMIN','ROLE_ADMIN','ROLE_EMPLEADO')"><a href="#">Dashboard</a></li><!-- Acceso autorizado -->     
+                            <li class="menubar"><a href="dashboard_main.html">Dashboard</a></li></li><!-- Acceso autorizado -->     
 
 
                         </ul>
@@ -158,8 +154,7 @@
                     </div>  
 
                 </div>
-
-            </div>
+        </div>
 
         <div class="slider-area" style="padding:0;border:0">
             <div class="zigzag-bottom"></div>

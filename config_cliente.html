@@ -77,7 +77,7 @@
                                             <li class="dropdown dropdown-small " sec:authorize="isAuthenticated()">
                                                 <a data-toggle="dropdown" data-hover="" class="nombreuser" href="#" style="margin:0"><span>Bienvenido, Diego Angulex </span><span th:text="${#authentication.name}"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                                 <ul style="left:250px; top:32px" class="dropdown-menu">
-                                                    <li><a href="#" class="link1">Perfil de usuario</a></li>
+                                                    <li><a href="config_cliente.html" class="link1">Configuracion</a></li>
                                                     <li><a href="#" class="link1">Pedidos Realizados</a></li>
                                                     <form id="form-cerrar-sesion" th:action="@{/logout}" method="POST">                                                        
                                                     </form>
@@ -129,10 +129,7 @@
 
                                             <!-- end of block .auth header-->
                                         </div>
-
-
-
-                                      
+                                        <!-- FIN DE LOG IN -->
 
                                     </ul>
                                 </div>
@@ -156,16 +153,16 @@
                             </button>
                         </div> 
                         <ul class="nav navbar-nav">
-                            <li><a href="#" th:href="@{/index}"><img src="img/logo_bar.png"/></a></li>
+                            <li><a href="index.html"><img src="img/logo_bar.png"/></a></li>
                         </ul>
                         <ul class="nav navbar-nav">
 
-                            <li class="active menubar"><a href="#" th:href="@{/index}" >Inicio</a></li>
-                            <li class="menubar"><a href="#" th:href="@{/tienda}">Tienda</a></li>
+                            <li class="active menubar"><a href="index.html" >Inicio</a></li>
+                            <li class="menubar"><a href="tienda.html">Tienda</a></li>
                             <li class="menubar"><a href="CheckOut.html">Checkout</a></li>                        
                             <!--<li class="menubar"><a href="#">Contactános</a></li>-->
                             <li class="menubar"><a href="#" th:href="@{/index/}">Test</a></li>
-                            <li class="menubar" sec:authorize="hasAnyRole('ROLE_SYSADMIN','ROLE_ADMIN','ROLE_EMPLEADO')"><a href="#">Dashboard</a></li><!-- Acceso autorizado -->     
+                            <li class="menubar"><a href="dashboard_main.html">Dashboard</a></li></li><!-- Acceso autorizado -->     
 
 
                         </ul>
@@ -176,12 +173,23 @@
                     </div>  
 
                 </div>
-
-            </div>
+        </div>
 
     
   <!-- BEGIN CENTER SECTION-->
-
+ <!-- carrito global -->
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Configuracion de Cliente</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Page title area -->
+    
 
 
                       <!-- END SIDEBAR-->
@@ -193,7 +201,7 @@
  
 
                                 <!-- bloque usuario -->
-                                <div class="block" style="padding:10px;">
+                                <div class="block">
                                     <!-- cabecera -->
                                     <div class="bg-image" style="background-image: url('img/photo28@2x.jpg');">
                                         <div class="block-content bg-primary-op text-center overflow-hidden">
@@ -233,6 +241,12 @@
                                                 
                                           <input class="radiop" id="tab2" type="radio" name="tabs"/>
                                           <label class="headp" for="tab2">Editar Contraseña</label>
+
+                                          <input class="radiop" id="tab3" type="radio" name="tabs"/>
+                                          <label class="headp" for="tab3">Tarjetas de Credito</label>
+
+                                          <input class="radiop" id="tab4" type="radio" name="tabs"/>
+                                          <label class="headp" for="tab4">Direcciones</label>
 
                                             <section class="sectorp" id="content1">
                                                 <div class="col-md-12 form-horizontal">
@@ -314,12 +328,12 @@
                                                 </div>    
                                             </section>
 
-                                                        <section class="sectorp" id="content2"> 
+                                            <section class="sectorp" id="content2"> 
                                                      
-                                                        <div class="form-group col-md-12 col-xs-12" >
-                                                            <div class="centrandot col-xs-12">
-                                                                <label for="profile-password">Contraseña Actual</label>
-                                                                <input class="centrando form-control input-lg" type="password" id="profile-password" name="profile-password">
+                                                  <div class="form-group col-md-12 col-xs-12" >
+                                                      <div class="centrandot col-xs-12">
+                                                         <label for="profile-password">Contraseña Actual</label>
+                                                            <input class="centrando form-control input-lg" type="password" id="profile-password" name="profile-password">
                                                            
                                                                 
                                                                   <hr style="max-width:300px;">
@@ -328,13 +342,13 @@
                                                        
                                                         
                                                             <div class="centrandot col-xs-12">
-                                                                <label for="profile-password-new">Nueva Contraseña</label>
-                                                                <input class="centrando form-control input-lg" type="password" id="profile-password-new" name="profile-password-new">
+                                                             <label for="profile-password-new">Nueva Contraseña</label>
+                                                             <input class="centrando form-control input-lg" type="password" id="profile-password-new" name="profile-password-new">
                                                             
                                                       
                                             
-                                                                <label for="profile-password-new-confirm">Confirme Contraseña</label>
-                                                                <input class="centrando form-control input-lg" type="password" id="profile-password-new-confirm" name="profile-password-new-confirm">
+                                                             <label for="profile-password-new-confirm">Confirme Contraseña</label>
+                                                             <input class="centrando form-control input-lg" type="password" id="profile-password-new-confirm" name="profile-password-new-confirm">
                                                             </div>
                                                         </div>
 
@@ -342,9 +356,125 @@
 
                                                              <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-check push-5-r"></i> Guardar Cambios</button>
                                                             
-                                                         </div>
+                                                   </div>
                                                   
-                                                       </section>
+                                            </section>
+                                             <section class="sectorp" id="content3"> 
+                                                     
+                        <div class="col-lg-12">
+                            <!-- Hover Table -->
+                            <div class="block">
+                                <div class="block-header">
+                                    <div class="block-options">
+                                       <img src="img/credit1.png" height="25px" width="250px">
+                                    </div>
+                              
+                                    <h3 class="block-title">LISTA DE TARJETAS DE CREDITO</h3>
+                                </div>
+                                <div class="block-content">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" style="width:25%;">Nombre de Tarjeta</th>
+                                                <th class="text-center">Tipo</th>
+                                                <th class="text-center hidden-xs" style="width: 35%;">Numero</th>
+                                                <th class="text-center hidden-xs" style="width: 15%;">Expiracion</th>
+                                                <th class="text-center" style="width: 100px;">Accion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">Daniel Flores</td>
+                                                <td class="text-center">Visa</td>
+                                                <td class="text-center">XXXX-XXXXXX-1111</td>
+                                                <td class="text-center">07/2020</td>                                                
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Daniel Flores</td>
+                                                <td class="text-center">Visa</td>
+                                                <td class="text-center">XXXX-XXXXXX-2222</td>
+                                                <td class="text-center">05/2021</td> 
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                           
+                                          
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END Hover Table -->
+                        </div>
+                                                  
+                                            </section>
+                                             <section class="sectorp" id="content4"> 
+                                                     
+                                                    <div class="col-lg-12">
+                            <!-- Hover Table -->
+                            <div class="block">
+                                <div class="block-header">
+                                    
+                                    <h3 class="block-title">DIRECCIONES GUARDADAS</h3>
+                                </div>
+                                <div class="block-content">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" style="width:40%;">Direccion</th>
+                                                <th class="text-center" style="width: 15%;">Departamento</th>
+                                                <th class="text-center hidden-xs" style="width: 15%;">Provincia</th>
+                                                <th class="text-center hidden-xs" style="width: 15%;">Distrito</th>
+                                                <th class="text-center" style="width: 12%;">Accion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">Calle los Manzanos 123</td>
+                                                <td class="text-center">Lima</td>
+                                                <td class="text-center">Lima</td>
+                                                <td class="text-center">Los Olivos</td>                                                
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Calle los naranjos 145</td>
+                                                <td class="text-center">Lima</td>
+                                                <td class="text-center">Lima</td>
+                                                <td class="text-center">San Isidro</td>                                                
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END Hover Table -->
+                        </div>
+                                    
+                                                  
+                                            </section>
                                      </div>
                                 <!-- fin de bloque usuario -->
                                 </form> 
