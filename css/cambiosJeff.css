@@ -28,4 +28,16 @@
   margin-top: 50px;
 }
 
+.htitle:hover{
+	background-color: rgba(38, 33, 29, 0.04);
+}
 
+.cen{
+	margin: auto;
+	padding: 0;
+}
+
+.cen1{
+	margin: 40px;
+	padding: 10px;
+}

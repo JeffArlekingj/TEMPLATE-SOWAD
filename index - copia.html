@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+    
+    <!--Llamo al fragmento de la cabecera -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title th:text="${titulo}"></title>
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css' />
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/owl.carousel.css" th:href="@{/css/owl.carousel.css}" />
+        <link rel="stylesheet" href="css/cambiosJeff.css" th:href="@{/css/cambiosJeff.css}"/>
+        <link rel="stylesheet" href="css/style.css" th:href="@{/css/style.css}"/>
+        <link rel="stylesheet" href="css/responsive.css" th:href="@{/css/responsive.css}"/>
+        <link rel="stylesheet" href="assets/css/theme-default.css" th:href="@{assets/css/theme-default.css}"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/topbar.css" th:href="@{assets/css/topbar.css}" />
+        <link rel="stylesheet" href="css/dropdown.css" th:href="@{/css/dropdown.css}"/>
+        <link rel="stylesheet" type="text/css" href="css/jefftabs.css">
+
+        <link rel="stylesheet" href="assets/css/vendor.css">
+    <!-- endbuild-->  
+    <!-- Theme styles, please replace "default" with other color scheme from the list available in template/css-->
+    <!-- build:csstheme-default-->
+    <link rel="stylesheet" href="assets/css/theme-default.css">
+    <!-- endbuild-->
+    <!-- Your styles should go in this file-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <!-- EndTemplate Realty Space -->
+
+    <!-- OneUI template -->
+    <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+    <!-- EndTemplate OneUI -->
+
+
+    </head>
+    <body>
+
+
+        <div class="mainmenu-area"> <!-- menú pegajoso -->
+
+                <!-- Menu login -->
+                <div class="header-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="user-menu">
+                                    <ul>
+
+                                        <li><a class="menuC" href="#" sec:authorize="isAuthenticated()"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                        <li><a class="menuC" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
+                                        <li><a class="menuC" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="header-right ">
+                                    <ul class="list-unstyled list-inline">
+                                        <!--     LOG IN REGISTER MENU BAR   -->        
+                                        <div class="auth auth--header ">
+
+                                            <!-- hidden nombre de usuario -->
+                                            <li class="dropdown dropdown-small " sec:authorize="isAuthenticated()">
+                                                <a data-toggle="dropdown" data-hover="" class="nombreuser" href="#" style="margin:0"><span>Bienvenido, Diego Angulex </span><span th:text="${#authentication.name}"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                                <ul style="left:250px; top:32px" class="dropdown-menu">
+                                                    <li><a href="#" class="link1">Perfil de usuario</a></li>
+                                                    <li><a href="#" class="link1">Pedidos Realizados</a></li>
+                                                    <form id="form-cerrar-sesion" th:action="@{/logout}" method="POST">                                                        
+                                                    </form>
+                                                    <li><a href="#" class="link1" onclick="document.getElementById('form-cerrar-sesion').submit()" >Cerrar Sesión</a></li>
+                                                </ul>
+                                            </li> 
+                                            <!-- fin hidden nombre de usuario -->
+
+                                          <!--   <li class="dropdown auth__nav-item"> -->
+
+                                                <button data-toggle="dropdown" type="button" class="dropdown-toggle js-auth-nav-btn auth__nav-btn" sec:authorize="!isAuthenticated()">
+                                                    <span class="hidden logtitle" ><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Log in</span>
+                                                </button>
+
+                                            <div class="dropdown__menu auth__dropdown--login">
+                                                    <!-- BEGIN AUTH LOGIN-->
+                                                    <h5 class="titulod">Inicio Sesión</h5>
+                                                    
+                                                    <form action="#" class="form form--flex form--auth js-login-form js-parsley">
+                                                            <div class="row">
+                                                                <div class="form-group">
+                                                                  <label class="">Usuario</label>
+                                                                  <input type="text" name="usuario" id="" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label  lass="">Contraseña</label>
+                                                                  <input type="password" name="password" id="" required class="form-control"/>
+                                                                  <button class="olvide" href="">Olvide mi Contraseña</button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                              <div class="form-group">
+                                                              
+                                                              <button type="submit" class="btnin">Iniciar Sesión</button>
+                                                              <div class="checkin">
+                                                                  <input type="checkbox" id="" class=""/>
+                                                                  <label class="">Recordar Sesión</label>
+                                                              </div>
+                                                            </div>
+                                                            </div>
+                                                            
+                                                    </form>
+                                                    <!-- end of block .auth__form-->
+                                                    <!-- END AUTH LOGIN-->
+                                            </div>
+                                         <!--    </li> -->
+
+
+                                            <!-- end of block .auth header-->
+                                        </div>
+
+
+
+                                      
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Fin menú login -->
+
+
+
+                <!-- Menú de navegación --> 
+                <div class="container">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+
+                            </button>
+                        </div> 
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" th:href="@{/index}"><img src="img/logo_bar.png"/></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+
+                            <li class="active menubar"><a href="#" th:href="@{/index}" >Inicio</a></li>
+                            <li class="menubar"><a href="#" th:href="@{/tienda}">Tienda</a></li>
+                            <li class="menubar"><a href="CheckOut.html">Checkout</a></li>                        
+                            <!--<li class="menubar"><a href="#">Contactános</a></li>-->
+                            <li class="menubar"><a href="#" th:href="@{/index/}">Test</a></li>
+                            <li class="menubar" sec:authorize="hasAnyRole('ROLE_SYSADMIN','ROLE_ADMIN','ROLE_EMPLEADO')"><a href="#">Dashboard</a></li><!-- Acceso autorizado -->     
+
+
+                        </ul>
+                        <ul class="nav navbar-nav pull-right" style="margin-top: 19px">
+                            <li class="carrito"><a href="carritoBar.html">Carrito - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a></li>
+                        </ul>
+
+                    </div>  
+
+                </div>
+
+            </div>
+
+    
+  <!-- BEGIN CENTER SECTION-->
+
+
+
+                      <!-- END SIDEBAR-->
+
+                      <!-- DASHBOARD BLOQUE-->
+                      <div class="cen1 container">
+                          <div class="widget js-widget widget--dashboard">
+
+ 
+
+                                <!-- bloque usuario -->
+                                <div class="block" style="padding:10px;">
+                                    <!-- cabecera -->
+                                    <div class="bg-image" style="background-image: url('img/photo28@2x.jpg');">
+                                        <div class="block-content bg-primary-op text-center overflow-hidden">
+                                            <div class="push-30-t push animated fadeInDown">
+                                                <img class="img-avatar img-avatar96 img-avatar-thumb" src="img/Luke-Henriques-Gomes-96x96.png" height="96" width="96" alt="">
+                                            </div>
+                                            <div class="push-30 animated fadeInUp">
+                                                <h2 class="h4 font-w600 text-white push-5">RAMOS</h2>
+                                                <h3 class="h5 text-white-op">Jeronimo</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- fin de cabecera -->
+
+                                    <!-- debajo cabecera-->
+                                    <div class="block-content text-center">
+                                        <div class="row items-push text-uppercase">
+                                            <div class="col-xs-6 col-sm-6">
+                                                <div class="font-w700 text-gray-darker animated fadeIn">Compras (Articulos)</div>
+                                                <a class="h2 font-w300 text-primary animated flipInX" href="javascript:void(0)">20</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <div class="font-w700 text-gray-darker animated fadeIn">Cantidad de Compras (s/.)</div>
+                                                <a class="h2 font-w300 text-primary animated flipInX" href="javascript:void(0)">s/. 160</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                <!-- fin debajo cabecera -->
+
+                             
+                                <form method="post">
+                                    <div class="block">
+
+                                          <input class="radiop" id="tab1" type="radio" name="tabs" checked/>
+                                          <label class="headp" for="tab1">Editar Datos Personales</label>
+                                                
+                                          <input class="radiop" id="tab2" type="radio" name="tabs"/>
+                                          <label class="headp" for="tab2">Editar Contraseña</label>
+
+                                            <section class="sectorp" id="content1">
+                                                <div class="col-md-12 form-horizontal">
+                                                        <div class="form-group">
+                                                            <div class="col-xs-6">
+                                                                <label>Usuario: <h2 style="color:#1abc9c;">Admin003</h2></label>
+                                                           
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-xs-6">
+                                                                <label for="">Dni</label>
+                                                                <input class="form-control input-lg" type="text" id="perfil-dni" name="perfil-dni" placeholder="Ingrese su Dni.." value="56176231">
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <label for="">Nombre</label>
+                                                                <input class="form-control input-lg" type="text" id="perfil-nombre" name="perfil-nombre" placeholder="Ingrese su Nombre.." value="Jeronimo">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-xs-6">
+                                                                <label for="">Apellido Paterno</label>
+                                                                <input class="form-control input-lg" type="text" id="perfil-ape_pate" name="perfil-ape_pate" placeholder="Ingrese su Apellido Paterno.." value="Ramos">
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <label for="">Apellido Materno</label>
+                                                                <input class="form-control input-lg" type="text" id="perfil-ape_mate" name="perfil-ape_mate" placeholder="Ingrese su Apellido Materno.." value="Rodriguez">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-xs-12">
+                                                                <label for="">Email</label>
+                                                                <input class="form-control input-lg" type="email" id="perfil-email" name="perfil-email" placeholder="Ingrese su Correo.." value="fuep@serap.com">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-xs-12">
+                                                                <label for="">  Direccion</label>
+                                                                <input class="form-control input-lg" type="email" id="perfil-direccion" name="perfil-direccion" placeholder="Ingrese su Direccion.." value="calle los manzanos 123">
+                                                            </div>
+                                                        </div>
+                                                        <label for=""> Seleccione</label>
+
+                                                        <div class="form-group">
+
+                                                            <div class="col-xs-4">
+                                                                <select>
+                                                                    <option>Provincia</option>
+                                                                    <option>P1</option>
+                                                                    <option>P1</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <select>
+                                                                    <option>Departamento</option>
+                                                                    <option>D1</option>
+                                                                    <option>D2</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <select>
+                                                                    <option>Distrito</option>
+                                                                    <option>D1</option>
+                                                                    <option>D2</option>
+                                                                  </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-xs-12">
+                                                                <label for="profile-bio">Notas</label>
+                                                                <textarea class="form-control input-lg" id="profile-bio" name="profile-bio" rows="15" placeholder="Enter a few details about yourself..">Texto Adicional para este usuario / instrucciones, etc</textarea>
+                                                            </div>
+                                                        </div>
+                                                          <div class="text-center">
+                                                             <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-check push-5-r"></i> Guardar Cambios</button>
+                                                             <button class="btn btn-sm btn-warning" type="reset"><i class="fa fa-refresh push-5-r"></i> Resetear Campos</button>
+                                                         </div>
+                                                </div>    
+                                            </section>
+
+                                                        <section class="sectorp" id="content2"> 
+                                                     
+                                                        <div class="form-group col-md-12 col-xs-12" >
+                                                            <div class="centrandot col-xs-12">
+                                                                <label for="profile-password">Contraseña Actual</label>
+                                                                <input class="centrando form-control input-lg" type="password" id="profile-password" name="profile-password">
+                                                           
+                                                                
+                                                                  <hr style="max-width:300px;">
+                                                            </div>
+                                                    
+                                                       
+                                                        
+                                                            <div class="centrandot col-xs-12">
+                                                                <label for="profile-password-new">Nueva Contraseña</label>
+                                                                <input class="centrando form-control input-lg" type="password" id="profile-password-new" name="profile-password-new">
+                                                            
+                                                      
+                                            
+                                                                <label for="profile-password-new-confirm">Confirme Contraseña</label>
+                                                                <input class="centrando form-control input-lg" type="password" id="profile-password-new-confirm" name="profile-password-new-confirm">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group col-md-12 col-xs-12 text-center" >
+
+                                                             <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-check push-5-r"></i> Guardar Cambios</button>
+                                                            
+                                                         </div>
+                                                  
+                                                       </section>
+                                     </div>
+                                <!-- fin de bloque usuario -->
+                                </form> 
+                                <!-- fin tabs -->
+                               </div>
+                        </div>
+                      </div>
+                      <!-- FIN BLOQUE DASHBOARD-->
+                      
+           
+
+
+
+        
+        
+        <div th:fragment="footer-version1">
+
+            <div class="footer-top-area">
+                <div class="zigzag-bottom"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-about-us">
+                                <h2><img src="img/logo_bar.png" /></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at? um quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                                <div class="footer-social">
+                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-newsletter">
+                                <h2 class="footer-wid-title">Boletines de Suscripción</h2>
+                                <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                                <div class="newsletter-form">
+                                    <form action="#">
+                                        <input type="email" placeholder="Ingrese su Correo"  />
+                                        <input type="submit" value="Subscríbeme"  />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End footer top area --><!-- parte:8 -->
+
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="copyright">
+                                <p>&copy; 2017 Tech's Bar | Todos Los Derechos Reservado a <a href="!#" target="_blank">Tech's Bar = Bustamante, Angulo, Ramirez</a></p>                        
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="footer-card-icon">
+                                <i class="fa fa-cc-discover"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-paypal"></i>
+                                <i class="fa fa-cc-visa"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+
+        <!--  Fragmento de scripts -->
+        <div th:fragment="bloque-scripts-1">
+            <!-- Latest jQuery form server -->
+            <script src="https://code.jquery.com/jquery.min.js"></script>
+
+            <!-- Bootstrap JS form CDN -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+            <!-- jQuery sticky menu -->
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.sticky.js"></script>
+
+            <!-- jQuery easing -->
+            <script src="js/jquery.easing.1.3.min.js"></script>
+
+            <!-- Main Script -->
+            <script src="js/main.js"></script>
+            <script src="js/pegajosoJS.js"></script>
+        </div>
+        
+        <script>//Cambiar de nombre al prev y next -> owl-prev y owl-next
+            $(function(){
+                $('.owl-prev').html("&laquo;");
+                $('.owl-next').html("&raquo;");
+            });
+        </script>
+        
+
+
+    </body>
+</html>
