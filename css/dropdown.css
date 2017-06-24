@@ -20,14 +20,15 @@
 .logtitle{
 	background: none;
 	border:none;
-	float:right;
+	float:right !important;
 	color:#fff;
 	margin-top: 8px;
+
 
 }
 
 .logtitle:hover{
-	color:#131313 !important;
+	color:#323232 !important;
 }
 
 .titulod{
