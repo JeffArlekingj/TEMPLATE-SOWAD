@@ -24,11 +24,12 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/css/theme-default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topbar.css" th:href="@{assets/css/topbar.css}" />
+    <link rel="stylesheet" href="css/dropdown.css"/>
 
   </head>
   <body>
    
-         <div class="mainmenu-area"> <!-- menú pegajoso -->
+  <div class="mainmenu-area"> <!-- menú pegajoso -->
 
                 <!-- Menu login -->
                 <div class="header-area">
@@ -49,11 +50,8 @@
                             <div class="col-md-4">
                                 <div class="header-right ">
                                     <ul class="list-unstyled list-inline">
-                                        <!--     LOG IN REGISTER MENU BAR   -->        
-                                        <div class="auth auth--header ">
-
-                                            <!-- hidden nombre de usuario -->
-                                            <li class="dropdown dropdown-small " sec:authorize="isAuthenticated()">
+                                            <!-- MENU CUANDO EL USUARIO SE LOGEA -->
+                                            <li class="hidden dropdown dropdown-small " sec:authorize="isAuthenticated()">
                                                 <a data-toggle="dropdown" data-hover="" class="nombreuser" href="#" style="margin:0"><span>Bienvenido, Diego Angulex </span><span th:text="${#authentication.name}"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                                 <ul style="left:250px; top:32px" class="dropdown-menu">
                                                     <li><a href="config_cliente.html" class="link1">Configuracion</a></li>
@@ -63,61 +61,49 @@
                                                     <li><a href="#" class="link1" onclick="document.getElementById('form-cerrar-sesion').submit()" >Cerrar Sesión</a></li>
                                                 </ul>
                                             </li> 
-                                            <!-- fin hidden nombre de usuario -->
+                                            <!-- FIN MENU CUANDO EL USUARIO SE LOGEA -->
 
-                                          <!--   <li class="dropdown auth__nav-item"> -->
-
-                                                <button data-toggle="dropdown" type="button" class="dropdown-toggle js-auth-nav-btn auth__nav-btn" sec:authorize="!isAuthenticated()">
-                                                    <span class="hidden logtitle" ><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Log in</span>
-                                                </button>
-
-                                            <div class="dropdown__menu auth__dropdown--login">
-                                                    <!-- BEGIN AUTH LOGIN-->
-                                                    <h5 class="titulod">Inicio Sesión</h5>
-                                                    
-                                                    <form action="#" class="form form--flex form--auth js-login-form js-parsley">
-                                                            <div class="row">
-                                                                <div class="form-group">
-                                                                  <label class="">Usuario</label>
-                                                                  <input type="text" name="usuario" id="" class="form-control"/>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                  <label  lass="">Contraseña</label>
-                                                                  <input type="password" name="password" id="" required class="form-control"/>
-                                                                  <button class="olvide" href="">Olvide mi Contraseña</button>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="row">
-                                                              <div class="form-group">
-                                                              
-                                                              <button type="submit" class="btnin">Iniciar Sesión</button>
-                                                              <div class="checkin">
-                                                                  <input type="checkbox" id="" class=""/>
-                                                                  <label class="">Recordar Sesión</label>
-                                                              </div>
-                                                            </div>
-                                                            </div>
-                                                            
-                                                    </form>
-                                                    <!-- end of block .auth__form-->
-                                                    <!-- END AUTH LOGIN-->
-                                            </div>
-                                         <!--    </li> -->
-
-
-                                            <!-- end of block .auth header-->
-                                        </div>
-                                        <!-- FIN DE LOG IN -->
-
+                                             <!-- LOG IN DE MENU-->
+                                            <li class="auth--header dropdown auth__nav-item">
+                                              <button data-toggle="dropdown" type="button"
+                                               class="logtitle"><i class="fa fa-sign-in"></i> Log in
+                                              </button>
+                                              <div class="dropdown__menu auth__dropdown--login">
+                                               
+                                                <h5 class="titulod">Iniciar Sesión</h5>
+                                                <form action="#" class="form form--flex">
+                                                  <div class="row">
+                                                    <div class="form-group">
+                                                      <label for="login-username-dropdown" class="txtform">Usuario</label>
+                                                      <input type="text" name="username" id="login-username-dropdown" required data-parsley-trigger="keyup" data-parsley-minlength="6" data-parsley-validation-threshold="5" data-parsley-minlength-message="Login should be at least 6 chars" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="login-password-dropdown" class="txtform">Contraseña</label>
+                                                      <input type="password" name="password" id="login-password-dropdown" required class="form-control">
+                                                    </div>
+                                                  </div>
+                                                     <div class="row">
+                                                      <a href="#" class="olvide">Olvide Contraseña</a>
+                                                       <button type="submit" class="btnis">Iniciar Sesión</button>
+                                                     </div>
+                                                  <div class="gap row form__remember">
+                                                    <input type="checkbox" id="remember-in-dropdown" class="in-checkbox check">
+                                                    <label for="remember-in-dropdown" class="in-label rem">Recuérdame</label>
+                                                  </div>
+                                                  <br/>
+                                                  <div class="row">
+                                                    <span class="txtac">No tienes Cuenta?</span><button type="button" class="btnrg">Registrame</button>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                            </li>
+                                              <!-- FIN LOG IN DE MENU-->
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> <!-- Fin menú login -->
-
-
 
                 <!-- Menú de navegación --> 
                 <div class="container">
@@ -153,6 +139,7 @@
 
                 </div>
         </div>
+
     <!-- carrito global -->
     <div class="product-big-title-area">
         <div class="container">
