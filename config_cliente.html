@@ -341,81 +341,58 @@
                                                                     <h3 class="block-title">Tarjetas de Credito Guardadas</h3>
                                                                 </div>
 
-                                                                 <!-- Modal Registrar Direccion-->
-                                                                    <div  class="modal fade" id="modal-registrarTarjetaCredito" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-fromright"  style="width: 400px; height: 800px; margin-top:200px">
-                                                                            <div class="modal-content" >  
-                                                                                <div class="row">
-                                                                                    <div class="col-lg-12">
-                                                                                        <!-- Bootstrap Editar -->
-                                                                                        <div class="block block-themed" style="background-color: #f6f6f6;margin-bottom: 0px">
-                                                                                            <div class="block-header bg-success" style="background-color: #1abc9c">                                    
-                                                                                                <h3 class="block-title pull-left" style="padding-top:5px">Registrar Direccion</h3><span class="close" id="cerraModalCategoria" data-dismiss="modal">&times;</span>
-                                                                                            </div>
-                                                                                            <div class="block-content">
-                                                                                                <form class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" >                                                                                        
-                                                                                                    <div class="form-group">
-                                                                                                        <label class="col-xs-12" for="register1-email">Direccion</label>
-                                                                                                        <div class="col-xs-12">
-                                                                                                            <input class="form-control" type="text" id="txtNombre-registrarCategoria" name="txtNombre-registrarCategoria" placeholder="Escriba direccion...">
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <br/><br/>
-                                                                                                    <div class="form-group">
-                                                                                                       <div class="col-md-12">
-                                                                                                        <h3 style="width: 300px; font-size:13px; padding:7px 0px 7px; text-transform: capitalize;" class="block-title pull-left">Departamento</h3>
-                                                                                                            <select style="width: 330px; margin-left:0px;" class="fecha-mes" id="" name="">
-                                                                                                                <option value="">Seleccione Departamento…</option>
-                                                                                                                <option value="1">dep 1</option>
-                                                                                                                <option value="2">dep 2</option>
-                                                                                                                <option value="3">dep 3</option>
-                                                                                                            </select>
-                                                                                                        </div>
-                                                                                                        <br/><br/><br/>
 
-                                                                                                        <div class="col-md-12">
-                                                                                                            <h3 style="font-size:13px; padding:7px 0px 7px; text-transform: capitalize;" class="block-title pull-left">Provincia</h3>
-                                                                                                        <select style="width: 330px; margin-left:-1px;" class="fecha-mes" id="" name="">
-                                                                                                            <option value="">Seleccione Provincia…</option>
-                                                                                                            <option value="1">prov 1</option>
-                                                                                                            <option value="2">prov 2</option>
-                                                                                                            <option value="3">prov 3</option>
-                                                                                                        </select>
-                                                                                                        </div>
-                                                                                                        <br/><br/><br/>
-                                                                                                     
-                                                                                                       <div class="col-md-12">
-                                                                                                            <h3 style="font-size:13px; padding:7px 0px 7px; text-transform: capitalize;" class="block-title pull-left">Distrito</h3>
-                                                                                                            <select style="width: 330px; margin-left:-1px;" class="fecha-mes" id="" name="">
-                                                                                                                <option value="">Seleccione Distrito…</option>
-                                                                                                                <option value="1">dis 1</option>
-                                                                                                                <option value="2">dis 2</option>
-                                                                                                                <option value="3">dis 3</option>
-                                                                                                            </select>
-                                                                                                        </div>                                                  
-                                                                                                    </div>
-                                                                                                    
+                                                            <!-- Modal Editar Categoría-->
+                    <div class="modal fade" id="modal-registrarTarjetaCredito" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-fromright"  style="margin-top:200px">
+                            <div class="modal-content" >
+                                
+                                <div class="row" id="form-editar-categoria">
+                                    <div class="col-lg-12">
+                                        <!-- Bootstrap Editar -->
+                                        <div class="block block-themed" style="background-color: #f6f6f6;margin-bottom: 0">
+                                            <div class="block-header bg-success" style="background-color: #1abc9c">                                    
+                                                <h3 class="block-title pull-left" style="padding-top:5px">Editar Categoría</h3><span class="close" id="cerraModalCategoria" data-dismiss="modal">&times;</span>
+                                            </div>
+                                            <div class="block-content">
+                                                <form class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" > 
+                                                    <div class="form-group">                                            
+                                                        <div class="col-xs-12">
+                                                            <input class="form-control" type="hidden" id="txtId-editarCategoria" name="txtNombre-editarCategoria">
+                                                        </div>
+                                                    </div>                                       
+                                                    <div class="form-group">
+                                                        <label class="col-xs-12" for="register1-email">Nombre</label>
+                                                        <div class="col-xs-12">
+                                                            <input class="form-control" type="text" id="txtNombre-editarCategoria" name="txtNombre-editarCategoria" placeholder="Nombre de la categoría..">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-xs-12" for="register1-password">Descripción</label>
+                                                        <div class="col-xs-12">
+                                                            <textarea class="form-control" id="txtDescripcion-editarCategoria" name="txtDescripcion-editarCategoria" rows="7" placeholder="Descripción de la categoría.."></textarea>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                  
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12">
+                                                            <button class="btn btn-sm btn-success" type="submit" id="btnEditarCategoria"><i class="fa fa-refresh push-5-r"></i> Guardar cambios</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                     <!-- END Bootstrap Editar -->
+                                    </div>
+                                </div>
 
-                                                                                                    <br/><br/><br/>
-                                                                                                  
-                                                                                                    <div class="form-group">
-                                                                                                        <div class="col-xs-12">
-                                                                                                            <button class="btn btn-sm btn-success" type="submit" id="btnRegistrarCategoria"><i class="fa fa-check push-5-r"></i> Guardar cambios</button>
-                                                                                                        </div>                                                       
-                                                                                                    </div>
-                                                                                                    <br/>
-                                                                                                    <br/>
-                                                                                                </form>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                     <!-- END Bootstrap Editar -->
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                    <!-- fin Modal -->
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- fin Modal -->
 
 
                                                 <div class="block-content">
@@ -479,8 +456,8 @@
                                                                 </div>
                                                                 <h3 class="block-title">DIRECCIONES GUARDADAS</h3>
                                                             </div>
-
-                                                              <!-- Modal Registrar Direccion-->
+                                                            
+                                                            <!-- Modal Registrar Direccion-->
                                                                     <div  class="modal fade" id="modal-registrarDirecciones" tabindex="-1" role="dialog" aria-hidden="true">
                                                                         <div class="modal-dialog modal-dialog-fromright"  style="width: 400px; height: 800px; margin-top:200px">
                                                                             <div class="modal-content" >  
@@ -492,14 +469,14 @@
                                                                                                 <h3 class="block-title pull-left" style="padding-top:5px">Registrar Direccion</h3><span class="close" id="cerraModalCategoria" data-dismiss="modal">&times;</span>
                                                                                             </div>
                                                                                             <div class="block-content">
-                                                                                                <form class="form-horizontal push-5-t" action="" method="post" onsubmit="return false;" >                                                                                        
+                                                                                                <form class="" action="" method="post">                                                                                        
                                                                                                     <div class="form-group">
-                                                                                                        <label class="col-xs-12" for="register1-email">Direccion</label>
+                                                                                                        <h3 style="font-size:13px; padding:7px 0px 7px; text-transform: capitalize;" class="block-title pull-left">Provincia</h3>
                                                                                                         <div class="col-xs-12">
-                                                                                                            <input class="form-control" type="text" id="txtNombre-registrarCategoria" name="txtNombre-registrarCategoria" placeholder="Escriba direccion...">
+                                                                                                            <input class="form-control" type="text"  name="" placeholder="Escriba direccion...">
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <br/><br/>
+                                                                                                   
                                                                                                     <div class="form-group">
                                                                                                        <div class="col-md-12">
                                                                                                         <h3 style="width: 300px; font-size:13px; padding:7px 0px 7px; text-transform: capitalize;" class="block-title pull-left">Departamento</h3>
@@ -555,6 +532,7 @@
                                                                     </div>
                                                                     
                                                                     <!-- fin Modal -->
+                                                          
 
                                                      <div class="block-content">
                                                         <table class="table table-hover">
