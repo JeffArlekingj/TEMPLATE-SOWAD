@@ -2,6 +2,7 @@
    http://dribbble.com/shots/1127916-Sign-in
 */
 
+
 *{
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -226,3 +227,31 @@ a{
           cursor: pointer;
 }
 
+
+/* flash pop up */
+
+
+.info-msg,
+.exito-msg,
+.adv-msg,
+.error-msg {
+  margin: 0px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+.info-msg {
+  color: #059;
+  background-color: #BEF;
+}
+.exito-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.adv-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
