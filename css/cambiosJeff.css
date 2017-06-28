@@ -1,3 +1,5 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+
 .menubar{
 	padding-top: 60px;
 	
@@ -53,4 +55,38 @@
 .marcasc{
 	margin: 0 auto !important;
 	text-align: center !important;
+}
+
+input[type="checkbox"]{
+	display:none;
+}
+input[type="checkbox"] +.label-text:before{
+	   content: "\f096";
+	   font-family:"FontAwesome";
+	   speak:none;
+	   line-height:1;
+	   width:1em;
+	   display:inline-block;
+	   margin-right:5px;
+	}
+
+input[type="checkbox"]:checked + .label-text:before{
+	 content: "\f14a";
+	 color:#06a3e9;	
+
+	}
+
+
+.btnda{
+	background:#F3B75E !important;
+	color:#323232;
+}
+
+.btnda:hover{
+	background:#b3b2b2 !important;
+	color:#fff;
+}
+
+.pf{
+	padding:10px !important;
 }
