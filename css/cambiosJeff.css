@@ -90,3 +90,57 @@ input[type="checkbox"]:checked + .label-text:before{
 .pf{
 	padding:10px !important;
 }
+
+
+/* config-cliente - tarjeta de credito */
+
+.full-card{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.card-new{
+	width:96px;
+
+}
+
+.card-titulos{
+	padding-left: 16px;
+	padding-top: 10px;
+}
+
+.card-boxes{
+	width:398px;
+}
+
+.card-mes{
+	width:221px !important;
+	display: inline-block;
+	padding:11px;
+}
+
+.card-ano{
+	width:170px !important;
+	display: inline-block;
+	padding:11px;
+}
+
+.ccv{
+	padding-top: 35px;
+
+}
+
+.card-ccv{
+	width:130px;
+	margin-left:15px; 
+}
+
+.card-btn{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.md{
+	width:400px !important;
+	height:400px !important; 
+}
