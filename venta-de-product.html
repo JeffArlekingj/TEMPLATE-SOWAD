@@ -23,115 +23,85 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/css/theme-default.css">
+     <link rel="stylesheet" href="css/dropdown.css"/>
+     <link rel="stylesheet" type="text/css" href="css/whishlist.css"/>
 
   </head>
   <body>
    
-        <div class="header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="user-menu">
-                            <ul>
-                                <li class="hidden"><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li><!-- Solo se muestra cuando se está logeado -->
-                                <li><a class="xf" href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                                <li><a class="xf" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
-                                <li><a class="xf" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
-                              <!--   <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
-                              <li class="hidden"><a href="#"><i class="fa fa-power-off"></i> Logout</a></li> --><!--Solo se muestra cuando están logeados -->                           
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="header-right">
-                            <ul class="list-unstyled list-inline">
-                        <!--     LOG IN REGISTER MENU BAR   -->        
-                                <div class="auth auth--header">
-                                                <li class="dropdown auth__nav-item">
-                                                  <div class="dropdown__menu auth__dropdown--restore">
+        <!-- Menu login -->
+                <div class="header-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="user-menu">
+                                    <ul>
 
-                                                    <!-- RESETEAR CONTRASENA-->
-                                                    <h5 class="auth__title">Resetear Ccontraseña</h5>
-                                                    <form action="#" class="form form--flex form--auth form--restore js-restore-form js-parsley">
-                                                      <div class="row">
-                                                        <div class="form-group">
-                                                          <label for="restore-email-dropdown" class="control-label">Ingresar tu Usuario or Correo</label>
-                                                          <input type="email" name="email" id="restore-email-dropdown" required class="form-control"/>
-                                                        </div>
-                                                      </div>
-                                                      <div class="row">
-                                                        <button type="submit" class="form__submit">Resetear Contraseña</button>
-                                                      </div>
-                                                      <div class="row">
-                                                        <div class="form__options">Regresar a
-                                                          <button type="button" class="js-user-login">Iniciar Sesión</button>or
-                                                          <button type="button" class="js-user-register">Registración</button>
-                                                        </div>
-                                                      </div>
+                                        <li><a class="menuC" href="#" sec:authorize="isAuthenticated()"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                        <li><a class="menuC" href="carritoBar.html"><i class="fa fa-cart-arrow-down"></i> Carrito</a></li>
+                                        <li><a class="menuC" href="CheckOut.html"><i class="fa fa-money"></i> Checkout</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="header-right ">
+                                    <ul class="list-unstyled list-inline">
+                                            <!-- MENU CUANDO EL USUARIO SE LOGEA -->
+                                            <li class="hidden dropdown dropdown-small " sec:authorize="isAuthenticated()">
+                                                <a data-toggle="dropdown" data-hover="" class="nombreuser" href="#" style="margin:0"><span>Bienvenido, Diego Angulex </span><span th:text="${#authentication.name}"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                                <ul style="left:250px; top:32px" class="dropdown-menu">
+                                                    <li><a href="config_cliente.html" class="link1">Configuracion</a></li>
+                                                    <li><a href="#" class="link1">Pedidos Realizados</a></li>
+                                                    <form id="form-cerrar-sesion" th:action="@{/logout}" method="POST">                                                        
                                                     </form>
-                                                    <!-- FIN DE RESETEAR CONTRASENA-->
+                                                    <li><a href="#" class="link1" onclick="document.getElementById('form-cerrar-sesion').submit()" >Cerrar Sesión</a></li>
+                                                </ul>
+                                            </li> 
+                                            <!-- FIN MENU CUANDO EL USUARIO SE LOGEA -->
 
+                                             <!-- LOG IN DE MENU-->
+                                            <li class="auth--header dropdown auth__nav-item">
+                                              <button data-toggle="dropdown" type="button"
+                                               class="logtitle"><i class="fa fa-sign-in"></i> Log in
+                                              </button>
+                                              <div class="dropdown__menu auth__dropdown--login">
+                                               
+                                                <h5 class="titulod">Iniciar Sesión</h5>
+                                                <form action="#" class="form form--flex">
+                                                  <div class="row">
+                                                    <div class="form-group">
+                                                      <label for="login-username-dropdown" class="txtform">Usuario</label>
+                                                      <input type="text" name="username" id="login-username-dropdown" required data-parsley-trigger="keyup" data-parsley-minlength="6" data-parsley-validation-threshold="5" data-parsley-minlength-message="Login should be at least 6 chars" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="login-password-dropdown" class="txtform">Contraseña</label>
+                                                      <input type="password" name="password" id="login-password-dropdown" required class="form-control">
+                                                    </div>
                                                   </div>
-                                                </li>
-                                                    <li class="dropdown auth__nav-item">
-                                                          <button data-toggle="dropdown" type="button" class="dropdown-toggle js-auth-nav-btn auth__nav-btn">
-                                                            <svg class="auth__icon-user">
-                                                              <use xlink:href="#icon-user"></use>
-                                                            </svg><span class="header__span"> Log in</span>
-                                                          </button>
-                                                        <!-- hidden nombre de usuario -->
-                                                        <!-- <li class="hidden dropdown dropdown-small">
-                                                        <a data-toggle="dropdown" data-hover="" class="" href="#"><span class="nom">Oscar Angulex</span></a>
-                                                        <ul style="left:320px;" class="dropdown-menu">
-                                                            <li><a href="#">Perfil de usuario</a></li>
-                                                            <li><a href="#">Pedidos Realizados</a></li>
-                                                            <li><a href="#">Cerrar Sesión</a></li>
-                                                        </ul>
-                                                        </li> -->
-                                                        <!-- fin hidden nombre de usuario -->
-                                                          <div class="dropdown__menu auth__dropdown--login">
-                                                            <!-- INICIO DE SESION - DROPDOWN-->
-                                                            <h5 class="auth__title">Inicio Sesión</h5>
-                                                            <form action="#" class="form form--flex form--auth js-login-form js-parsley">
-                                                              <div class="row">
-                                                                <div class="form-group">
-                                                                  <label for="login-username-dropdown" class="">Usuario</label>
-                                                                  <input type="text" name="username" id="login-username-dropdown" required data-parsley-trigger="keyup" data-parsley-minlength="6" data-parsley-validation-threshold="5" data-parsley-minlength-message="Login should be at least 6 chars" class="form-control"/>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                  <label for="login-password-dropdown" class="">Contraseña</label>
-                                                                  <input type="password" name="password" id="login-password-dropdown" required class="form-control"/>
-                                                                </div>
-                                                              </div>
-                                                              <div class="row">
-                                                                <div class="form__options form__options--forgot">
-                                                                  <button type="button" class="js-user-restore pass-c">Olvide mi Contraseña</button>
-                                                                </div>
-                                                                <button type="submit" class="form__submit">Iniciar Sesión</button>
-                                                              </div>
-                                                              <div class="form__remember">
-                                                                <input type="checkbox" id="remember-in-dropdown" class="in-checkbox"/>
-                                                                <label for="remember-in-dropdown" class="in-label">Recordar Sesión</label>
-                                                              </div>
-                                                              <div class="row">
-                                                                <div class="form__options">Aun no eres usuario?
-                                                                  <button type="button" class="js-user-register">Registrate</button>
-                                                                </div>
-                                                              </div>
-                                                            </form>
-                                                            <!-- FIN DE INICIO SE SESION - DROPDOWN-->
-                                                          </div>
-                                                    </li>
-                                            </div>
-                    <!-- FIN DE LOG IN -->
-                                <li class="hidden"><a href="#"><i class="fa fa-power-off"></i> CERRAR SESIÓN</a></li>
-                            </ul>
+                                                     <div class="row">
+                                                      <a href="#" class="olvide">Olvide Contraseña</a>
+                                                       <button type="submit" class="btnis">Iniciar Sesión</button>
+                                                     </div>
+                                                  <div class="gap row form__remember">
+                                                    <input type="checkbox" id="remember-in-dropdown" class="in-checkbox check">
+                                                    <label for="remember-in-dropdown" class="in-label rem">Recuérdame</label>
+                                                  </div>
+                                                  <br/>
+                                                  <div class="row">
+                                                    <span class="txtac">No tienes Cuenta?</span><button type="button" class="btnrg">Registrame</button>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                            </li>
+                                              <!-- FIN LOG IN DE MENU-->
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div> <!-- End header area -->
+                </div> <!-- Fin menú login -->
     
      <!-- End site branding area -->
                 <div class="mainmenu-area">
@@ -225,26 +195,28 @@
                         </div>
                         
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-7">
                                 <div class="product-images">
                                     <div class="md">
-                                        <img src="img/mr.jpg" height="400" width="400" alt="">
+                                        <img src="img/Productos/Producto1/Producto1-1.jpg" height="400" width="400" alt="">
                                     </div>
                                     
                                     <div class="product-gallery">
-                                        <img src="img/mr.jpg" height="100" width="100" alt="">
-                                        <img src="img/mr.jpg" height="100" width="100" alt="">
-                                        <img src="img/mr.jpg" height="100" width="100" alt="">
-                                        <img src="img/mr.jpg" alt="">
+                                        <img src="img/Productos/Producto1/Producto1-1.jpg" height="100" width="100" alt="">
+                                        <img src="img/Productos/Producto1/Producto1-2.jpg" height="100" width="100" alt="">
+                                        <img src="img/Productos/Producto1/Producto1-3.jpg" height="100" width="100" alt="">
+                                        <img src="img/Productos/Producto1/Producto1-4.jpg" height="100" width="100" alt="">
+                               
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="col-sm-6">
+                            <div class="col-sm-5">
                                 <div class="product-inner">
                                     <h2 class="product-name">Sony Smart TV - 2015</h2>
                                     <div class="product-inner-price">
                                         <ins>$700.00</ins> <del>$800.00</del>
+                                          <label style="padding-left:20px; padding-top:10px;" class="heart"><input type="checkbox"><span class="label-whislist"></span></label>
                                     </div>    
                                     
                                     <form action="" class="cart">
