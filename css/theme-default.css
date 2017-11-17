@@ -3314,10 +3314,7 @@
 
   @mixin =============================================================*/
 
-a {
-  color: #00bbaa;
-  text-decoration: none;
-}
+
 
 a.hover,
 a:hover {

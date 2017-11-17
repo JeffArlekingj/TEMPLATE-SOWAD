@@ -42,9 +42,10 @@
 	border:none;
 	float:right !important;
 	color:#fff;
+	font-family: "Titillium Web", sans-serif;
 	margin-top: 8px;
 	font-size: 13px !important;
-	text-transform: uppercase !important;
+	font-weight: 700;
 }
 
 .logtitle:hover{
